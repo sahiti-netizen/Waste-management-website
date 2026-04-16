@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ManaChetta — Hyderabad's Citizen Garbage Map</title>
+  <meta
+    name="description"
+    content="Report garbage in Hyderabad in 30 seconds. Snap a photo, auto-detect your ward, MLA and MP, and send it straight to GHMC. Public map. Public accountability."
+  />
+  <meta name="theme-color" content="#0f7b4a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ManaChetta — Hyderabad's Citizen Garbage Map" />
+  <meta
+    property="og:description"
+    content="Crowdsourced garbage reporting for Hyderabad. One photo. 30 seconds. Public accountability for GHMC, MLAs and MPs."
+  />
+  <meta property="og:type" content="website" />
+
+  <!-- Leaflet -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@600;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ========== NAV ========== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="ManaChetta home">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- Leaf + dot icon -->
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 22C5 12 13 5 27 5c0 14-7 22-17 22-3 0-5-1-5-5z" />
+            <path d="M5 27C9 22 13 19 19 16" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          Mana<span class="brand-accent">Chetta</span>
+          <em class="brand-sub">మన చెత్త</em>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#map">Map</a>
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#about">About</a>
+        <a href="#report" class="btn btn-primary btn-sm">Report now</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Hyderabad · Crowdsourced · Citizen-first</span>
+        <h1>
+          Report garbage in <span class="u">30 seconds.</span><br />
+          Hold Hyderabad's leaders <span class="u">accountable.</span>
+        </h1>
+        <p class="lede">
+          Snap a photo. We auto-detect your GHMC ward, your MLA and your MP,
+          map it publicly, and send it straight to GHMC — so ignored complaints
+          become impossible to ignore.
+        </p>
+        <div class="hero-ctas">
+          <a href="#report" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            Report garbage
+          </a>
+          <a href="#how" class="btn btn-ghost">See how it works →</a>
+        </div>
+
+        <dl class="hero-stats" aria-label="Key stats">
+          <div><dt>GHMC wards covered</dt><dd data-counter="150">0</dd></div>
+          <div><dt>Reports so far</dt><dd data-counter="1284">0</dd></div>
+          <div><dt>MLAs &amp; MPs mapped</dt><dd data-counter="39">0</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-top">
+              <div class="dot"></div>
+              <span>ManaChetta</span>
+            </div>
+            <div class="phone-photo"></div>
+            <div class="phone-tags">
+              <span class="tag tag-green">Ward 92 · Banjara Hills</span>
+              <span class="tag">MLA auto-detected</span>
+              <span class="tag">MP auto-detected</span>
+            </div>
+            <button class="phone-btn">Send to GHMC via WhatsApp</button>
+          </div>
+        </div>
+        <div class="hero-blob"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>From footpath to feed in three taps.</h2>
+        <p>No login. No forms. Anonymous by default.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step-num">1</div>
+          <h3>Snap &amp; drop a pin</h3>
+          <p>
+            Open ManaChetta, take one photo of the garbage pile, illegal dump
+            or broken drain. We capture the geo-tag automatically.
+          </p>
+        </li>
+        <li class="step">
+          <div class="step-num">2</div>
+          <h3>We auto-detect your ward, MLA &amp; MP</h3>
+          <p>
+            Your coordinates are mapped to a GHMC ward. We attach the MLA of
+            that Assembly constituency and the Hyderabad MP responsible — so
+            there's no confusion about who's accountable.
+          </p>
+        </li>
+        <li class="step">
+          <div class="step-num">3</div>
+          <h3>One tap to GHMC &amp; the public map</h3>
+          <p>
+            A report card with the photo, landmark and representatives is
+            pinned to the public map. Tap
+            <strong>Send to GHMC</strong> to push it to the GHMC
+            complaints helpline with all the details pre-filled.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== REPORT FORM ========== -->
+  <section class="section section-alt" id="report">
+    <div class="container grid-2">
+      <div>
+        <span class="eyebrow">Report now</span>
+        <h2>One photo. One ward. One message to GHMC.</h2>
+        <p class="lede">
+          Your report is anonymous. Your location is only used to figure out
+          which ward you're in — nothing else. No sign-up, no app install.
+        </p>
+
+        <ul class="bullets">
+          <li>
+            <span class="bullet-ico" aria-hidden="true">✓</span>
+            Works on any phone browser — no app store required.
+          </li>
+          <li>
+            <span class="bullet-ico" aria-hidden="true">✓</span>
+            Auto-fills ward, MLA and MP from your GPS.
+          </li>
+          <li>
+            <span class="bullet-ico" aria-hidden="true">✓</span>
+            One tap sends the full report to the GHMC helpline on WhatsApp.
+          </li>
+        </ul>
+      </div>
+
+      <form class="card form" id="report-form" novalidate>
+        <div class="form-row">
+          <label for="photo">Photo of the issue</label>
+          <input
+            type="file"
+            id="photo"
+            name="photo"
+            accept="image/*"
+            capture="environment"
+            required
+          />
+          <div class="photo-preview" id="photo-preview" aria-live="polite"></div>
+        </div>
+
+        <div class="form-row">
+          <label for="category">Type of issue</label>
+          <select id="category" name="category" required>
+            <option value="">Select…</option>
+            <option>Overflowing garbage bin</option>
+            <option>Illegal dump / black spot</option>
+            <option>Construction debris</option>
+            <option>Dead animal</option>
+            <option>Blocked / broken drain</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="landmark">Landmark (optional)</label>
+          <input
+            type="text"
+            id="landmark"
+            name="landmark"
+            placeholder="e.g. Near Jubilee Hills Check Post"
+          />
+        </div>
+
+        <div class="form-row location-row">
+          <button
+            type="button"
+            id="detect-location"
+            class="btn btn-ghost btn-block"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+            </svg>
+            Detect my location
+          </button>
+          <div class="detected" id="detected" hidden>
+            <div><strong>Ward:</strong> <span data-d="ward">—</span></div>
+            <div><strong>MLA:</strong> <span data-d="mla">—</span></div>
+            <div><strong>MP:</strong> <span data-d="mp">—</span></div>
+            <div class="detected-coords">
+              <span data-d="coords">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-block">
+            Send report to GHMC
+          </button>
+          <p class="form-note">
+            By submitting you agree that the photo and location can be shown
+            on the public map. No personal data is collected.
+          </p>
+        </div>
+
+        <div class="form-success" id="form-success" hidden>
+          <h3>✅ Report filed.</h3>
+          <p>
+            We've opened WhatsApp with a pre-filled message to the GHMC
+            helpline. It will also show up on the public map shortly.
+          </p>
+          <a class="btn btn-ghost" href="#map">View it on the map →</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== MAP ========== -->
+  <section class="section" id="map">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Public map</span>
+        <h2>Every complaint. Every ward. In the open.</h2>
+        <p>
+          Zoom into your neighbourhood and see what's been reported. Older
+          unresolved complaints turn red — so the streets that get ignored stay
+          visible.
+        </p>
+      </div>
+
+      <div class="map-wrap">
+        <div id="leaflet" role="region" aria-label="Hyderabad garbage reports map"></div>
+        <div class="map-legend" aria-label="Legend">
+          <span><i class="dot dot-new"></i> Reported &lt; 3 days</span>
+          <span><i class="dot dot-open"></i> Open</span>
+          <span><i class="dot dot-old"></i> Ignored &gt; 14 days</span>
+          <span><i class="dot dot-done"></i> Cleared</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEADERBOARD ========== -->
+  <section class="section section-alt" id="leaderboard">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Accountability leaderboard</span>
+        <h2>Who's letting their ward down?</h2>
+        <p>
+          Every report is tagged to a ward, its MLA and its MP. The more
+          unresolved reports pile up, the higher they climb. Public list, public
+          shame — or public credit when it's cleaned up.
+        </p>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" role="tab" data-tab="wards">By ward</button>
+        <button class="tab" role="tab" data-tab="mlas">By MLA</button>
+        <button class="tab" role="tab" data-tab="mps">By MP</button>
+      </div>
+
+      <div class="leaderboard" id="leaderboard-list" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container grid-2">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2>Built by citizens, for Hyderabad.</h2>
+        <p>
+          ManaChetta is an open, citizen-run mirror of
+          <a href="https://www.nammakasa.in" target="_blank" rel="noopener">NammaKasa</a>
+          — the Bengaluru project that turned one photo into a public
+          accountability map. We're applying the same idea to
+          Hyderabad's GHMC wards, because our footpaths deserve the same
+          visibility.
+        </p>
+        <p>
+          No ads. No ownership by any political party. Just a public map and a
+          public leaderboard. If you'd like to contribute ward data, MLA
+          information or help run the platform, get in touch.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#report">Report a spot</a>
+          <a class="btn btn-ghost" href="mailto:hello@manachetta.in">Email us</a>
+        </div>
+      </div>
+      <aside class="about-cards">
+        <div class="mini-card">
+          <h4>Built for GHMC</h4>
+          <p>~150 wards across Greater Hyderabad, auto-mapped to MLAs and MPs.</p>
+        </div>
+        <div class="mini-card">
+          <h4>Open &amp; anonymous</h4>
+          <p>No account needed. No personal data collected. Open-source spirit.</p>
+        </div>
+        <div class="mini-card">
+          <h4>WhatsApp to GHMC</h4>
+          <p>One tap routes your report to GHMC's citizen helpline with the evidence attached.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 22C5 12 13 5 27 5c0 14-7 22-17 22-3 0-5-1-5-5z" />
+              <path d="M5 27C9 22 13 19 19 16" />
+            </svg>
+          </span>
+          <span class="brand-text">Mana<span class="brand-accent">Chetta</span></span>
+        </div>
+        <p>Hyderabad's citizen garbage map.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Product</h5>
+        <a href="#how">How it works</a>
+        <a href="#report">Report</a>
+        <a href="#map">Public map</a>
+        <a href="#leaderboard">Leaderboard</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:hello@manachetta.in">hello@manachetta.in</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Credits</h5>
+        <p class="small">
+          Inspired by
+          <a href="https://www.nammakasa.in" target="_blank" rel="noopener">NammaKasa</a>,
+          Bengaluru. Ward data is indicative and community-sourced.
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> ManaChetta · A volunteer project</span>
+      <span>Made with ♥ in Hyderabad</span>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <!-- Data + app -->
+  <script src="data/wards.js"></script>
+  <script src="data/reports.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/leaderboard.js"></script>
+</body>
+</html>
