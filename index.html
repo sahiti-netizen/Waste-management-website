@@ -55,8 +55,9 @@
       </a>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#learn">What to recycle</a>
-        <a href="#recyclers">Local recyclers</a>
+        <a href="#scan">Scan</a>
+        <a href="#learn">Guide</a>
+        <a href="#recyclers">Recyclers</a>
         <a href="#pickup">Pickup</a>
         <a href="#rewards">Rewards</a>
         <a href="#shop">Shop</a>
@@ -181,6 +182,91 @@
           </p>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <!-- ========== SNAP & SORT (AI scanner) ========== -->
+  <section class="section" id="scan">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Snap &amp; Sort · AI</span>
+        <h2>Not sure if it's recyclable? Just snap a picture.</h2>
+        <p>
+          Our in-browser AI identifies the object, guesses its material, and
+          tells you whether it can be recycled — and how. No upload, no
+          tracking; the photo never leaves your device.
+        </p>
+      </div>
+
+      <div class="scan-wrap">
+        <div class="scan-card" id="scan-card">
+          <label class="scan-drop" for="scan-input" id="scan-drop">
+            <span class="scan-drop-emoji" aria-hidden="true">📷</span>
+            <strong>Drop a photo or tap to choose one</strong>
+            <span class="muted small">PNG / JPG · phone camera works too</span>
+            <input
+              type="file"
+              id="scan-input"
+              accept="image/*"
+              capture="environment"
+              hidden
+            />
+          </label>
+
+          <div class="scan-preview" id="scan-preview" hidden>
+            <img id="scan-image" alt="Uploaded item" />
+            <button type="button" class="btn btn-ghost btn-sm" id="scan-reset">
+              Try a different photo
+            </button>
+          </div>
+
+          <div class="scan-loading" id="scan-loading" hidden>
+            <div class="spinner" aria-hidden="true"></div>
+            <span id="scan-loading-text">Loading model…</span>
+          </div>
+        </div>
+
+        <div class="scan-results" id="scan-results" hidden>
+          <div class="scan-verdict" id="scan-verdict">
+            <span class="verdict-badge" id="verdict-badge">—</span>
+            <h3 id="verdict-title">—</h3>
+            <p class="muted small" id="verdict-sub">—</p>
+          </div>
+
+          <div class="scan-meta">
+            <div>
+              <span class="muted small">Likely material</span>
+              <div class="scan-meta-val" id="scan-material">—</div>
+            </div>
+            <div>
+              <span class="muted small">Reward rate</span>
+              <div class="scan-meta-val" id="scan-points">—</div>
+            </div>
+          </div>
+
+          <div class="scan-tip" id="scan-tip-wrap" hidden>
+            <strong>Prep tip</strong>
+            <p id="scan-tip">—</p>
+          </div>
+
+          <details class="scan-detail">
+            <summary>Other guesses</summary>
+            <ul class="scan-predictions" id="scan-predictions"></ul>
+          </details>
+
+          <div class="scan-actions">
+            <button type="button" class="btn btn-primary" id="scan-add-pickup">
+              Add to my pickup
+            </button>
+            <a href="#learn" class="btn btn-ghost">See similar in the guide →</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="muted small scan-disclaimer">
+        Powered by TensorFlow.js + MobileNet. Runs entirely in your browser.
+        First scan downloads the model (~5 MB) and is cached afterwards.
+      </p>
     </div>
   </section>
 
