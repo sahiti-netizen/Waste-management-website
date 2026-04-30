@@ -342,76 +342,104 @@
     <div class="container grid-2">
       <div>
         <span class="eyebrow">Schedule a pickup</span>
-        <h2>One bag. One slot. Points in your wallet.</h2>
+        <h2>One bag. One slot. Your choice of payout.</h2>
         <p class="lede">
           Tell us roughly what you have and where you are. The nearest
           recycler confirms within an hour, picks it up free of charge, and
-          credits Green Points based on the actual weight.
+          pays you in cash, UPI cashback or Green Points — whichever you
+          pick.
         </p>
 
         <ul class="bullets">
           <li><span class="bullet-ico" aria-hidden="true">✓</span> Free doorstep pickup, 7 days a week.</li>
-          <li><span class="bullet-ico" aria-hidden="true">✓</span> Live weigh-in, transparent point credit.</li>
+          <li><span class="bullet-ico" aria-hidden="true">✓</span> Live weigh-in, transparent payout.</li>
           <li><span class="bullet-ico" aria-hidden="true">✓</span> No minimum quantity for paper / plastic / metal.</li>
           <li><span class="bullet-ico" aria-hidden="true">✓</span> E-waste &amp; hazardous handled by authorised partners.</li>
         </ul>
 
         <div class="estimate-card" id="estimate-card">
-          <div>
-            <span class="muted small">Estimated reward</span>
-            <div class="estimate-points">
-              <span data-d="estimate-points">0</span>
-              <span class="muted">pts</span>
-            </div>
-            <div class="muted small">≈ <span data-d="estimate-cash">₹0</span></div>
+          <div class="estimate-grid">
+            <button type="button" class="payout-pill" data-payout="cash">
+              <span class="payout-pill-label">💰 Cash on pickup</span>
+              <span class="payout-pill-val" data-d="estimate-cash">₹0</span>
+              <span class="muted small">paid in person</span>
+            </button>
+            <button type="button" class="payout-pill" data-payout="upi">
+              <span class="payout-pill-label">📲 UPI cashback</span>
+              <span class="payout-pill-val" data-d="estimate-upi">₹0</span>
+              <span class="muted small">within 48h</span>
+            </button>
+            <button type="button" class="payout-pill is-active" data-payout="points">
+              <span class="payout-pill-label">🪙 Green Points</span>
+              <span class="payout-pill-val">
+                <span data-d="estimate-points">0</span> pts
+              </span>
+              <span class="muted small">+20 % bonus</span>
+            </button>
           </div>
-          <div class="estimate-meta">
-            <span class="muted small">Based on the items you've added below</span>
-          </div>
+          <p class="muted small estimate-note">
+            Pick how you'd like to be paid. You can change this any time
+            before the pickup.
+          </p>
         </div>
       </div>
 
       <form class="card form" id="pickup-form" novalidate>
         <div class="form-row">
-          <label for="p-name">Your name</label>
-          <input type="text" id="p-name" name="name" placeholder="e.g. Aarav S." required />
+          <label for="p-name">Your name <span class="req">*</span></label>
+          <input type="text" id="p-name" name="name" placeholder="e.g. Aarav S."
+                 required minlength="2" />
         </div>
 
         <div class="form-row form-row-2">
           <div>
-            <label for="p-phone">Phone</label>
-            <input type="tel" id="p-phone" name="phone" placeholder="10-digit mobile" required />
+            <label for="p-phone">Phone <span class="req">*</span></label>
+            <input type="tel" id="p-phone" name="phone" placeholder="10-digit mobile"
+                   required pattern="[0-9]{10}" inputmode="numeric"
+                   title="10 digits, numbers only" />
           </div>
           <div>
-            <label for="p-pin">PIN code</label>
-            <input type="text" id="p-pin" name="pin" placeholder="500034" inputmode="numeric" pattern="[0-9]{6}" required />
+            <label for="p-pin">PIN code <span class="req">*</span></label>
+            <input type="text" id="p-pin" name="pin" placeholder="500034"
+                   inputmode="numeric" pattern="[0-9]{6}" required
+                   title="6-digit Indian PIN" />
           </div>
         </div>
 
         <div class="form-row">
-          <label for="p-address">Address</label>
-          <textarea id="p-address" name="address" rows="2" placeholder="Flat / street / landmark" required></textarea>
+          <label for="p-address">Address <span class="req">*</span></label>
+          <textarea id="p-address" name="address" rows="2"
+                    placeholder="Flat / street / landmark" required minlength="6"></textarea>
         </div>
 
         <div class="form-row form-row-2">
           <div>
-            <label for="p-date">Pickup date</label>
+            <label for="p-date">Pickup date <span class="req">*</span></label>
             <input type="date" id="p-date" name="date" required />
           </div>
           <div>
-            <label for="p-slot">Slot</label>
+            <label for="p-slot">Slot <span class="req">*</span></label>
             <select id="p-slot" name="slot" required>
-              <option value="9–11 AM">9–11 AM</option>
-              <option value="11 AM–1 PM">11 AM–1 PM</option>
-              <option value="3–5 PM">3–5 PM</option>
-              <option value="5–7 PM">5–7 PM</option>
+              <option value="9-11 AM">9-11 AM</option>
+              <option value="11 AM-1 PM">11 AM-1 PM</option>
+              <option value="3-5 PM">3-5 PM</option>
+              <option value="5-7 PM">5-7 PM</option>
             </select>
           </div>
         </div>
 
+        <div class="form-row" id="upi-row" hidden>
+          <label for="p-upi">UPI ID <span class="req">*</span></label>
+          <input type="text" id="p-upi" name="upi" placeholder="yourname@bank"
+                 pattern="[A-Za-z0-9._-]+@[A-Za-z]+"
+                 title="A valid UPI handle, e.g. name@oksbi" />
+          <span class="muted small">Required because you've chosen UPI cashback.</span>
+        </div>
+
         <fieldset class="form-row">
-          <legend>What are you giving away? (rough kg)</legend>
+          <legend>What are you giving away? (rough kg) <span class="req">*</span></legend>
           <div class="qty-grid" id="qty-grid"></div>
+          <p class="muted small qty-help">Add at least one row above before confirming.</p>
         </fieldset>
 
         <div class="form-actions">
@@ -419,8 +447,8 @@
             Confirm pickup
           </button>
           <p class="form-note">
-            Final points are credited after the recycler weighs your bag.
-            Estimates use industry averages.
+            Final payout is calculated after the recycler weighs your bag.
+            Estimates use industry-average rates.
           </p>
         </div>
 
