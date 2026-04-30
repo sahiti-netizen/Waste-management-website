@@ -557,6 +557,188 @@
     </div>
   </section>
 
+  <!-- ========== PARTNER (collection drives) ========== -->
+  <section class="section section-alt" id="partner">
+    <div class="container grid-2">
+      <div>
+        <span class="eyebrow">Partner with ReLoop</span>
+        <h2>Run a monthly collection drive at your gate.</h2>
+        <p class="lede">
+          Gated societies, schools, offices and campuses can register a
+          shared address to host a collection drive once a month. Our truck
+          shows up, residents drop dry waste / e-waste / textiles, and the
+          society earns a community pool of points or cash.
+        </p>
+
+        <ul class="bullets">
+          <li><span class="bullet-ico" aria-hidden="true">✓</span> Free monthly drive on a date that suits you.</li>
+          <li><span class="bullet-ico" aria-hidden="true">✓</span> Residents / employees keep their individual rewards.</li>
+          <li><span class="bullet-ico" aria-hidden="true">✓</span> Society earns 5 % bonus into a community pool.</li>
+          <li><span class="bullet-ico" aria-hidden="true">✓</span> A pre-drive flyer + WhatsApp poster, designed for you.</li>
+        </ul>
+
+        <div class="partner-tally" id="partner-tally" hidden>
+          <div>
+            <span class="muted small">Registered partners</span>
+            <div class="reward-mid"><span data-d="partner-count">0</span></div>
+          </div>
+          <div>
+            <span class="muted small">Combined community size</span>
+            <div class="reward-mid"><span data-d="partner-people">0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <form class="card form" id="partner-form" novalidate>
+        <div class="form-row">
+          <label for="pn-org">Organisation name <span class="req">*</span></label>
+          <input type="text" id="pn-org" name="org" required minlength="2"
+                 placeholder="e.g. Lake View Apartments / Acme Pvt Ltd" />
+        </div>
+
+        <div class="form-row">
+          <label for="pn-type">Type <span class="req">*</span></label>
+          <select id="pn-type" name="type" required>
+            <option value="">Select…</option>
+            <option>Gated residential society</option>
+            <option>Apartment building</option>
+            <option>School</option>
+            <option>College / university</option>
+            <option>Corporate office</option>
+            <option>Tech park / business campus</option>
+            <option>Hospital</option>
+            <option>Hotel / resort</option>
+          </select>
+        </div>
+
+        <div class="form-row form-row-2">
+          <div>
+            <label for="pn-contact">Contact person <span class="req">*</span></label>
+            <input type="text" id="pn-contact" name="contact" required minlength="2"
+                   placeholder="Secretary / admin / facility manager" />
+          </div>
+          <div>
+            <label for="pn-phone">Phone <span class="req">*</span></label>
+            <input type="tel" id="pn-phone" name="phone" required pattern="[0-9]{10}"
+                   inputmode="numeric" placeholder="10-digit mobile" />
+          </div>
+        </div>
+
+        <div class="form-row form-row-2">
+          <div>
+            <label for="pn-email">Email <span class="req">*</span></label>
+            <input type="email" id="pn-email" name="email" required
+                   placeholder="admin@yourplace.in" />
+          </div>
+          <div>
+            <label for="pn-people">People on site <span class="req">*</span></label>
+            <input type="number" id="pn-people" name="people" required min="20"
+                   placeholder="e.g. 240" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="pn-address">Address <span class="req">*</span></label>
+          <textarea id="pn-address" name="address" rows="2" required minlength="6"
+                    placeholder="Building / street / area"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="pn-pref">Preferred drive day <span class="req">*</span></label>
+          <select id="pn-pref" name="pref" required>
+            <option value="">Select…</option>
+            <option>1st Saturday of the month</option>
+            <option>2nd Saturday of the month</option>
+            <option>3rd Saturday of the month</option>
+            <option>Last Saturday of the month</option>
+            <option>1st Sunday of the month</option>
+            <option>Last Sunday of the month</option>
+            <option>Weekday morning (we'll suggest one)</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-block">
+            Register for monthly drives
+          </button>
+          <p class="form-note">
+            We'll confirm by phone within 2 business days and lock in your
+            first drive date.
+          </p>
+        </div>
+
+        <div class="form-success" id="partner-success" hidden>
+          <h3>✅ You're on the list.</h3>
+          <p id="partner-success-msg"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== ASK (item not listed) ========== -->
+  <section class="section" id="ask">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Item not listed?</span>
+        <h2>Not sure? Ask us.</h2>
+        <p>
+          Our scanner buckets results into the categories on this site, so
+          obscure items can fall through the cracks. Tell us what you have
+          and we'll get back to you within a day.
+        </p>
+      </div>
+
+      <form class="card form ask-form" id="ask-form" novalidate>
+        <div class="form-row form-row-2">
+          <div>
+            <label for="ask-name">Your name <span class="req">*</span></label>
+            <input type="text" id="ask-name" name="name" required minlength="2"
+                   placeholder="e.g. Riya P." />
+          </div>
+          <div>
+            <label for="ask-contact">Phone or email <span class="req">*</span></label>
+            <input type="text" id="ask-contact" name="contact" required minlength="6"
+                   placeholder="10-digit mobile or your email" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="ask-item">What's the item? <span class="req">*</span></label>
+          <input type="text" id="ask-item" name="item" required minlength="3"
+                 placeholder="e.g. old fish tank with broken lid" />
+        </div>
+
+        <div class="form-row">
+          <label for="ask-desc">A bit more detail</label>
+          <textarea id="ask-desc" name="desc" rows="3"
+                    placeholder="Roughly how big? What's it made of? How many do you have?"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="ask-photo">Photo (optional)</label>
+          <input type="file" id="ask-photo" name="photo" accept="image/*"
+                 capture="environment" />
+          <span class="muted small">A photo helps us answer faster. We never share it.</span>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-block">
+            Send to our team
+          </button>
+          <p class="form-note">
+            We answer most queries within a day. If we can pick it up,
+            you'll get a quote and a slot link by phone.
+          </p>
+        </div>
+
+        <div class="form-success" id="ask-success" hidden>
+          <h3>✅ We've got it.</h3>
+          <p id="ask-success-msg"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <!-- ========== ABOUT ========== -->
   <section class="section" id="about">
     <div class="container grid-2">

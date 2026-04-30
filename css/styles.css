@@ -1777,3 +1777,24 @@ a:focus-visible {
 @media (max-width: 760px) {
   .guideline-cards { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================
+   Phase 15+16 · Partner tally + ask form
+   ========================================================== */
+
+.partner-tally {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 22px;
+  padding: 16px 18px;
+  background: var(--green-100);
+  border: 1px solid var(--leaf);
+  border-radius: var(--radius);
+}
+
+.ask-form { max-width: 720px; margin: 0 auto; }
+.ask-form input[type="file"] {
+  padding: 8px;
+  background: var(--bg-tint);
+}
