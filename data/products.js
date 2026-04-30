@@ -27,11 +27,12 @@ window.PRODUCTS = [
   { id: "menstrual-cup", name: "Reusable menstrual cup",   type: "good",     price: 1200, kind: "ship",
     desc: "Medical-grade silicone. Replaces years of disposable products.", emoji: "🌸" },
 
-  // Services
-  { id: "plant-sapling", name: "Tree planted in your name", type: "service", price: 300,  kind: "donate",
-    desc: "We plant a native sapling with a partner NGO. You get a photo + GPS pin.", emoji: "🌳" },
-  { id: "cleanup-spot",  name: "Sponsor a beach clean-up (1 hour)", type: "service", price: 800, kind: "donate",
-    desc: "Funds one volunteer-hour of coastal clean-up. Photo proof shared.", emoji: "🏖️" },
-  { id: "school-kit",    name: "Donate a school kit to a child", type: "service", price: 1500, kind: "donate",
-    desc: "Notebooks + pens + bag for one child for a school year.", emoji: "🎒" },
+  // Donations — kit-style only, so each redemption funds a tangible
+  // package handed to a child or family.
+  { id: "school-kit",       name: "School kit for a child",      type: "service", price: 1500, kind: "donate",
+    desc: "Notebooks + pens + bag for one child for a full school year.", emoji: "🎒" },
+  { id: "menstrual-kit",    name: "Menstrual hygiene kit",       type: "service", price: 1200, kind: "donate",
+    desc: "Six months of pads + a reusable cup + an awareness booklet for one woman.", emoji: "🌸" },
+  { id: "nutrition-kit",    name: "Child nutrition kit",         type: "service", price: 1800, kind: "donate",
+    desc: "A month of fortified meals + supplements for one underweight child.", emoji: "🥣" },
 ];
