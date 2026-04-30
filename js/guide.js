@@ -1,4 +1,6 @@
-// "What can I recycle?" guide — search + chip filters over RECYCLABLES.
+// "What can I recycle?" guide — image-first flip cards.
+// Front shows a unique illustration and the item name; clicking flips
+// to reveal cash / UPI / points per kg plus the prep tip.
 (function () {
   const grid     = document.getElementById("learn-grid");
   const empty    = document.getElementById("learn-empty");
@@ -12,11 +14,6 @@
 
   let activeCat = "all";
   let q = "";
-
-  function emojiFor(catId) {
-    const c = cats.find(x => x.id === catId);
-    return c ? c.icon : "♻️";
-  }
 
   function verdict(item) {
     if (item.recyclable === "yes")       return { tag: "tag-yes",       text: "Recyclable" };
@@ -44,7 +41,12 @@
   function renderChips() {
     chipsEl.innerHTML = "";
     chipsEl.appendChild(chip("all", "All", "♻️"));
-    cats.forEach(c => chipsEl.appendChild(chip(c.id, c.id, c.icon)));
+    cats.forEach(c => {
+      // Skip categories that no longer have any items after the cleanup
+      if (items.some(i => i.category === c.id)) {
+        chipsEl.appendChild(chip(c.id, c.id, c.icon));
+      }
+    });
   }
 
   function renderItems() {
@@ -52,8 +54,7 @@
     const filtered = items.filter(it => {
       if (activeCat !== "all" && it.category !== activeCat) return false;
       if (!ql) return true;
-      const hay = `${it.name} ${it.category} ${it.tip}`.toLowerCase();
-      return hay.includes(ql);
+      return `${it.name} ${it.category} ${it.tip}`.toLowerCase().includes(ql);
     });
 
     grid.innerHTML = "";
@@ -64,21 +65,62 @@
   function card(it) {
     const v = verdict(it);
     const el = document.createElement("article");
-    el.className = "item-card";
+    el.className = "flip-card";
+    el.tabIndex = 0;
+    el.setAttribute("role", "button");
+    el.setAttribute("aria-pressed", "false");
+    el.setAttribute("aria-label",
+      `${it.name}. Click to see payout rates.`);
+
     el.innerHTML = `
-      <div class="item-head">
-        <span class="item-emoji" aria-hidden="true">${emojiFor(it.category)}</span>
-        <div>
-          <div class="item-name">${escapeHtml(it.name)}</div>
-          <div class="item-cat">${escapeHtml(it.category)}</div>
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="flip-img-wrap">
+            <img src="${escapeHtml(it.image)}"
+                 alt="${escapeHtml(it.name)}"
+                 loading="lazy"
+                 onerror="this.style.opacity='0.2'" />
+          </div>
+          <div class="flip-name">${escapeHtml(it.name)}</div>
+          <span class="tag ${v.tag}">${v.text}</span>
+          <span class="flip-hint" aria-hidden="true">Tap for rates →</span>
+        </div>
+        <div class="flip-back" aria-hidden="true">
+          <div class="flip-back-head">
+            <strong>${escapeHtml(it.name)}</strong>
+            <span class="muted small">${escapeHtml(it.category)}</span>
+          </div>
+          <ul class="payout-list">
+            <li>
+              <span class="payout-label">💰 Cash on pickup</span>
+              <span class="payout-val">₹${it.cashPerKg.toLocaleString("en-IN")}/kg</span>
+            </li>
+            <li>
+              <span class="payout-label">📲 UPI cashback</span>
+              <span class="payout-val">₹${it.upiPerKg.toLocaleString("en-IN")}/kg</span>
+            </li>
+            <li>
+              <span class="payout-label">🪙 Green Points</span>
+              <span class="payout-val">${it.pointsPerKg.toLocaleString("en-IN")} pts/kg</span>
+            </li>
+          </ul>
+          <p class="flip-tip">${escapeHtml(it.tip)}</p>
+          <span class="flip-hint" aria-hidden="true">← Tap to flip back</span>
         </div>
       </div>
-      <div class="item-tags">
-        <span class="tag ${v.tag}">${v.text}</span>
-        ${it.pointsPerKg > 0 ? `<span class="tag tag-points">+${it.pointsPerKg} pts/kg</span>` : ""}
-      </div>
-      <p class="item-tip">${escapeHtml(it.tip)}</p>
     `;
+
+    const flip = () => {
+      const flipped = el.classList.toggle("is-flipped");
+      el.setAttribute("aria-pressed", String(flipped));
+    };
+    el.addEventListener("click", flip);
+    el.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        flip();
+      }
+    });
     return el;
   }
 

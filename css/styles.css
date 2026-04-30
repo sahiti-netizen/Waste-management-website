@@ -1468,3 +1468,131 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ==========================================================
+   Phase 10 · Guide flip cards
+   ========================================================== */
+
+.card-grid {
+  /* Flip cards need consistent height */
+  grid-auto-rows: 1fr;
+}
+
+.flip-card {
+  position: relative;
+  perspective: 1200px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  height: 280px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 600ms var(--ease);
+}
+.flip-card.is-flipped .flip-inner { transform: rotateY(180deg); }
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 200ms var(--ease);
+}
+.flip-card:hover .flip-front,
+.flip-card:hover .flip-back { box-shadow: var(--shadow); }
+.flip-card:focus-visible .flip-front,
+.flip-card:focus-visible .flip-back {
+  outline: 3px solid var(--leaf);
+  outline-offset: 2px;
+}
+
+.flip-front {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.flip-img-wrap {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  background: var(--bg-tint);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+}
+.flip-img-wrap img {
+  width: auto;
+  height: 100%;
+  max-height: 110px;
+  max-width: 80%;
+  object-fit: contain;
+}
+.flip-name {
+  font-weight: 700;
+  color: var(--ink-900);
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+.flip-hint {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--green-700);
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(160deg, #fff, var(--green-100));
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: left;
+}
+.flip-back-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.payout-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.payout-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: 0.88rem;
+}
+.payout-label { color: var(--ink-700); font-weight: 600; }
+.payout-val   { color: var(--ink-900); font-weight: 800; font-variant-numeric: tabular-nums; }
+.flip-tip {
+  margin: 8px 0 0;
+  font-size: 0.84rem;
+  color: var(--ink-500);
+  line-height: 1.45;
+}
+.flip-back .flip-hint { color: var(--ink-500); }
