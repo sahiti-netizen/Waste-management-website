@@ -58,9 +58,12 @@
         <a href="#scan">Scan</a>
         <a href="#learn">Guide</a>
         <a href="#recyclers">Recyclers</a>
+        <a href="#donate">Donate</a>
         <a href="#pickup">Pickup</a>
         <a href="#rewards">Rewards</a>
         <a href="#shop">Shop</a>
+        <a href="#partner">Partner</a>
+        <a href="#ask">Ask</a>
         <a href="#pickup" class="btn btn-primary btn-sm">Book pickup</a>
         <button id="user-chip" class="user-chip" type="button" aria-label="Your account">
           <span class="chip-dot"></span>
@@ -334,6 +337,42 @@
       </div>
 
       <div id="recyclers-list" class="recyclers-list"></div>
+    </div>
+  </section>
+
+  <!-- ========== DONATION CENTRES ========== -->
+  <section class="section section-alt" id="donate">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Donate, don't dump</span>
+        <h2>Some things shouldn't be recycled — they should be reused.</h2>
+        <p>
+          Wearable clothes, working laptops, story books, board games, school
+          supplies. Pick a beneficiary, follow the condition guidelines, and
+          we'll handle the pickup.
+        </p>
+      </div>
+
+      <div class="donate-controls">
+        <div class="chip-row" id="donate-type-chips" role="tablist"
+             aria-label="Filter by beneficiary type"></div>
+        <select id="donate-need-filter" aria-label="Filter by what they need">
+          <option value="">All categories</option>
+        </select>
+      </div>
+
+      <div class="donate-grid" id="donate-grid"></div>
+
+      <div class="donate-guidelines" id="donate-guidelines">
+        <h3>Condition guidelines</h3>
+        <p class="muted small">
+          Tap a category to see what's accepted and what's not. These rules
+          come from the centres themselves.
+        </p>
+        <div class="chip-row" id="guideline-chips" role="tablist"
+             aria-label="Pick a category to see guidelines"></div>
+        <div class="guideline-cards" id="guideline-cards"></div>
+      </div>
     </div>
   </section>
 
@@ -631,14 +670,18 @@
   <!-- Data + app -->
   <script src="data/recyclables.js"></script>
   <script src="data/recyclers.js"></script>
+  <script src="data/donation-centres.js"></script>
   <script src="data/products.js"></script>
   <script src="data/material-map.js"></script>
   <script src="js/app.js"></script>
   <script src="js/guide.js"></script>
   <script src="js/scan.js"></script>
   <script src="js/recyclers.js"></script>
+  <script src="js/donate.js"></script>
   <script src="js/pickup.js"></script>
   <script src="js/rewards.js"></script>
   <script src="js/shop.js"></script>
+  <script src="js/partner.js"></script>
+  <script src="js/ask.js"></script>
 </body>
 </html>
