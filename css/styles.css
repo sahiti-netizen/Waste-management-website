@@ -1654,3 +1654,31 @@ a:focus-visible {
 @media (max-width: 760px) {
   .estimate-grid { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================
+   Phase 13 · History status badges + payout colours
+   ========================================================== */
+
+.history-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.status-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.status-badge.is-pending   { background: #f4ead0; color: #7a5a00; }
+.status-badge.is-approved  { background: #d8ecf6; color: #0d4d70; }
+.status-badge.is-transit   { background: #ece4f9; color: #4a2a8c; }
+.status-badge.is-completed { background: var(--green-100); color: var(--green-900); }
+.status-badge.is-cancelled { background: #fde8e4; color: #7a261b; }
+
+.history-pts.cash { color: var(--green-700); }
