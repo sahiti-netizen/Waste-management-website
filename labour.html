@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShramSetu — Labour Compliance &amp; Employee Register</title>
+  <meta
+    name="description"
+    content="Maintain one employee master and auto-generate the statutory employee register (PF / ESI / PT) for any period, then export to Excel/CSV or portal-ready JSON."
+  />
+  <meta name="theme-color" content="#1f5fbf" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/labour.css" />
+</head>
+<body>
+  <!-- ========== NAV ========== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="ShramSetu home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 24c4-6 8-9 12-9s8 3 12 9" />
+            <circle cx="16" cy="9" r="4" />
+          </svg>
+        </span>
+        <span class="brand-text">Shram<span class="brand-accent">Setu</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#add">Add employee</a>
+        <a href="#register">Register</a>
+        <a href="#export">Export</a>
+        <a href="#import">Import</a>
+        <a href="index.html" class="pill-link">ManaChetta ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <div class="container">
+      <span class="eyebrow">Prototype · Labour compliance</span>
+      <h1>One employee master.<br />Every statutory register, generated.</h1>
+      <p class="lede">
+        Capture each employee once — name, PAN, Aadhaar, role, salary, PF, ESI —
+        and ShramSetu computes the monthly / quarterly / half-yearly register with
+        PF, ESI and Professional Tax, then exports it as <strong>Excel/CSV</strong>
+        or <strong>portal-ready JSON</strong> for upload to the labour portals.
+      </p>
+      <div class="hero-ctas">
+        <a href="#add" class="btn btn-primary">Add an employee</a>
+        <a href="#export" class="btn btn-ghost">Jump to export →</a>
+      </div>
+
+      <dl class="hero-stats">
+        <div><dt>Employees on file</dt><dd data-stat="count">0</dd></div>
+        <div><dt>Monthly gross wage bill</dt><dd data-stat="gross">₹0</dd></div>
+        <div><dt>PF + ESI (employee share)</dt><dd data-stat="deduct">₹0</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ========== COMPLIANCE / PRIVACY NOTICE ========== -->
+  <section class="container">
+    <div class="notice" role="note">
+      <strong>Important — how this handles Aadhaar &amp; biometrics.</strong>
+      This prototype does <em>not</em> capture, store or match biometric data, and it is
+      not connected to UIDAI. Aadhaar-based biometric authentication is restricted to
+      UIDAI-authorised agencies under the Aadhaar Act — a private employer cannot run its
+      own Aadhaar biometric matching. Aadhaar is stored here only as a
+      <strong>masked reference number</strong> (last 4 digits) with the employee's consent.
+      All data stays in your browser (<code>localStorage</code>); nothing is uploaded.
+    </div>
+  </section>
+
+  <!-- ========== ADD EMPLOYEE ========== -->
+  <section class="section" id="add">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Employee master</span>
+        <h2>Add / edit an employee</h2>
+        <p>Fields marked * are required. Statutory deductions are computed automatically.</p>
+      </div>
+
+      <form class="card form" id="emp-form" novalidate>
+        <input type="hidden" id="emp-id" />
+
+        <fieldset>
+          <legend>Identity</legend>
+          <div class="grid">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input type="text" id="name" required placeholder="e.g. Ravi Kumar" />
+            </div>
+            <div class="field">
+              <label for="guardian">Father / guardian name</label>
+              <input type="text" id="guardian" placeholder="e.g. Suresh Kumar" />
+            </div>
+            <div class="field">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="">Select…</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="dob">Date of birth</label>
+              <input type="date" id="dob" />
+              <small class="hint" id="age-hint"></small>
+            </div>
+            <div class="field">
+              <label for="pan">PAN</label>
+              <input type="text" id="pan" maxlength="10" placeholder="ABCDE1234F" style="text-transform:uppercase" />
+            </div>
+            <div class="field">
+              <label for="aadhaar">Aadhaar (stored masked) </label>
+              <input type="text" id="aadhaar" inputmode="numeric" maxlength="12" placeholder="12-digit — only last 4 kept" />
+              <small class="hint">We keep only <code>XXXX XXXX ••••</code>.</small>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Employment</legend>
+          <div class="grid">
+            <div class="field">
+              <label for="role">Designation / role *</label>
+              <input type="text" id="role" required placeholder="e.g. Loader / Supervisor" />
+            </div>
+            <div class="field">
+              <label for="department">Department</label>
+              <input type="text" id="department" placeholder="e.g. Operations" />
+            </div>
+            <div class="field">
+              <label for="doj">Date of joining</label>
+              <input type="date" id="doj" />
+            </div>
+            <div class="field">
+              <label for="uan">UAN (PF)</label>
+              <input type="text" id="uan" inputmode="numeric" maxlength="12" placeholder="12-digit UAN" />
+            </div>
+            <div class="field">
+              <label for="esi">ESI IP number</label>
+              <input type="text" id="esi" inputmode="numeric" maxlength="17" placeholder="ESIC insurance no." />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Wages (monthly, ₹)</legend>
+          <div class="grid">
+            <div class="field">
+              <label for="basic">Basic + DA *</label>
+              <input type="number" id="basic" min="0" step="1" required placeholder="e.g. 12000" />
+              <small class="hint">PF is computed on this (capped at ₹15,000).</small>
+            </div>
+            <div class="field">
+              <label for="gross">Gross salary *</label>
+              <input type="number" id="gross" min="0" step="1" required placeholder="e.g. 18000" />
+              <small class="hint">ESI applies when gross ≤ ₹21,000.</small>
+            </div>
+            <div class="field">
+              <label for="bank">Bank account</label>
+              <input type="text" id="bank" placeholder="Account number" />
+            </div>
+            <div class="field">
+              <label for="ifsc">IFSC</label>
+              <input type="text" id="ifsc" placeholder="e.g. SBIN0001234" style="text-transform:uppercase" />
+            </div>
+          </div>
+
+          <div class="calc" id="calc" hidden>
+            <span><b>Employee PF</b> <span data-c="pf">₹0</span></span>
+            <span><b>Employee ESI</b> <span data-c="esi">₹0</span></span>
+            <span><b>Prof. tax</b> <span data-c="pt">₹0</span></span>
+            <span class="calc-net"><b>Net pay</b> <span data-c="net">₹0</span></span>
+          </div>
+        </fieldset>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" />
+          The employee has consented to storing these details for statutory compliance.
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="save-btn">Save employee</button>
+          <button type="button" class="btn btn-ghost" id="reset-btn">Clear form</button>
+          <button type="button" class="btn btn-ghost" id="seed-btn">Load sample data</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== REGISTER ========== -->
+  <section class="section section-alt" id="register">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Employee register</span>
+        <h2>Register for the selected period</h2>
+        <p>Form C-style muster / wage register. Pick a period label for the export header.</p>
+      </div>
+
+      <div class="controls">
+        <div class="field">
+          <label for="period-type">Period</label>
+          <select id="period-type">
+            <option value="month">Monthly</option>
+            <option value="quarter">Quarterly</option>
+            <option value="half">Half-yearly</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="period-value">For</label>
+          <input type="month" id="period-value" />
+        </div>
+        <div class="field grow">
+          <label for="search">Search</label>
+          <input type="search" id="search" placeholder="Name, role, PAN…" />
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="register-table">
+          <thead>
+            <tr>
+              <th>#</th><th>Name</th><th>Role</th><th>PAN</th><th>Aadhaar</th>
+              <th>UAN</th><th class="num">Basic</th><th class="num">Gross</th>
+              <th class="num">PF</th><th class="num">ESI</th><th class="num">PT</th>
+              <th class="num">Net</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="register-body"></tbody>
+          <tfoot id="register-foot"></tfoot>
+        </table>
+      </div>
+      <p class="empty" id="empty-state">No employees yet. Add one above, or load sample data.</p>
+    </div>
+  </section>
+
+  <!-- ========== EXPORT ========== -->
+  <section class="section" id="export">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Export</span>
+        <h2>Generate the report file</h2>
+        <p>
+          Download the register as Excel/CSV for records, or as JSON structured toward
+          EPFO / ESIC / Shram Suvidha fields for portal upload.
+        </p>
+      </div>
+      <div class="export-grid">
+        <div class="mini-card">
+          <h4>Excel / CSV</h4>
+          <p>Opens directly in Excel or Google Sheets. One row per employee, with statutory columns.</p>
+          <button class="btn btn-primary btn-block" id="export-csv">Download .csv</button>
+        </div>
+        <div class="mini-card">
+          <h4>Portal JSON</h4>
+          <p>Structured payload — employer meta, period, employee rows and a statutory summary.</p>
+          <button class="btn btn-primary btn-block" id="export-json">Download .json</button>
+        </div>
+        <div class="mini-card">
+          <h4>EPFO ECR (preview)</h4>
+          <p>Tilde-separated ECR-style lines EPFO's portal expects. Indicative format only.</p>
+          <button class="btn btn-ghost btn-block" id="export-ecr">Preview ECR text</button>
+        </div>
+      </div>
+      <pre class="preview" id="preview" hidden></pre>
+    </div>
+  </section>
+
+  <!-- ========== IMPORT ========== -->
+  <section class="section section-alt" id="import">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Import → JSON</span>
+        <h2>Excel/CSV in, JSON out</h2>
+        <p>
+          Already keep a spreadsheet? Drop the CSV here — ShramSetu parses it and converts it
+          to the same portal JSON, exactly like the "Excel file → JSON" step you described.
+        </p>
+      </div>
+      <div class="card">
+        <input type="file" id="import-file" accept=".csv,text/csv" />
+        <p class="hint">Expected headers: name, role, pan, aadhaar, uan, basic, gross (extra columns are kept as-is).</p>
+        <pre class="preview" id="import-preview" hidden></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <strong>ShramSetu</strong> — a labour-compliance register prototype.
+        Statutory rates (PF 12%, ESI 0.75%/3.25%, Telangana PT slabs) are indicative and
+        must be verified against current notifications before filing. Not affiliated with
+        UIDAI, EPFO, ESIC or any government body.
+      </p>
+      <p class="small">All data lives in your browser only. <a href="index.html">← Back to ManaChetta</a></p>
+    </div>
+  </footer>
+
+  <script src="js/labour.js"></script>
+</body>
+</html>
