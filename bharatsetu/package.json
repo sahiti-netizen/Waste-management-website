@@ -1,0 +1,22 @@
+{
+  "name": "bharat-setu",
+  "version": "0.1.0",
+  "description": "An X-Road–style national data exchange layer for India — decentralised, signed, peer-to-peer government-to-government data exchange.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "demo": "node scripts/demo.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "x-road",
+    "data-exchange",
+    "government",
+    "india",
+    "interoperability",
+    "pki"
+  ]
+}
