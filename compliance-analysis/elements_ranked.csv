@@ -1,0 +1,121 @@
+rank,code,k,breadth,within,cross,provenance,description
+1,EST_NAME,37,7,30,6,already held by government,Name of establishment (and address where combined)
+2,EMP_NAME,19,6,13,5,already held by government,Employee/woman/claimant name (individual-level)
+3,LIN,15,4,11,3,already held by government,Labour Identification Number
+4,EST_ADDRESS,14,4,10,3,already held by government,Establishment address decomposed (premise/sub-locality/district/state/PIN)
+5,EMPLOYER_NAME,13,3,10,2,already held by government,Name of employer + address
+6,WAGE_COMPONENTS,13,6,7,5,,Basic/DA/allowances/OT/deductions/net
+7,AUTHORISED_PERSON,8,2,6,1,,"Authorised/indenting person: name, designation, contact"
+8,EMP_DESIGNATION,8,3,5,2,,Post/designation/nature of work
+9,CONTRACTOR_LIST,8,3,5,2,,Contractors with LIN and labour engaged
+10,PAN,8,3,5,2,already held by government,PAN (establishment in I; employer PAN/TAN in XIII/XV headers; employee PAN in XIII)
+11,REG_NO_UNDER_CODE,7,3,4,2,,Registration number under the Code
+12,UAN,7,4,3,3,already held by government,Universal Account Number
+13,EMP_DOJ,7,5,2,4,,Date of appointment
+14,ATTENDANCE_DAYS,7,4,3,3,,Month-wise employed/laid-off days
+15,HEADCOUNT_MATRIX,6,4,2,3,,Headcount by skill x gender (max/avg or year-end)
+16,EPF_CODE,6,1,5,0,already held by government,EPF code number of establishment (scheme registration identifier)
+17,ESIC_IP_NO,5,3,2,2,,ESIC Insurance Number
+18,CONTRIBUTION_PAID,5,4,1,3,,"Payments, proofs, outstanding/excess"
+19,EMPLOYER_CONTACT,4,2,2,1,,Employer email / telephone / mobile
+20,ENTITY_TYPE,4,3,1,2,,Type of entity / ownership / sector
+21,EMP_FATHER_SPOUSE,4,2,2,1,,Father's/spouse's/husband's name
+22,NOMINEE_DETAILS,4,2,2,1,,Nominee particulars
+23,SEPARATIONS,4,3,1,2,,Dismissals/retrenchments/layoffs with payments
+24,CONTRIBUTION_ASSESSED,4,2,2,1,,Contribution self-assessment (both bases)
+25,ESIGN,4,2,2,1,,e-sign / digital signature
+26,PAYMENT_REFS,4,4,0,3,,Challan/TRRN payment references
+27,RETURN_PERIOD,3,3,0,2,,Period of return
+28,EMP_DOB,3,3,0,2,,Date of birth
+29,EMP_SEX,3,3,0,2,,Sex (individual)
+30,MATERNITY_EVENT_DATES,3,1,2,0,,Confinement/birth/proof dates lifecycle
+31,BANK_ACCOUNT,3,2,1,1,,Bank account for refund
+32,SITE_LOCATION,3,1,2,0,,Construction site name/address/location
+33,CORRESPONDENCE_ADDR,3,1,2,0,,Correspondence address for the work
+34,CONSTRUCTION_NATURE,3,1,2,0,,Nature of construction work
+35,COMMENCEMENT_DATE,3,1,2,0,,Date of commencement
+36,WORK_DURATION,3,1,2,0,,Duration (approx/actual)
+37,PARTY_CASE_DETAILS,3,2,1,1,,"Party names/addresses, case refs"
+38,EPF_ESI_CODES,3,2,1,1,,EPF code / ESI code / ECR numbers as cross-references
+39,AADHAAR,3,2,1,1,,Aadhaar number (register; non-enrolled employee list in XVII Pt-IV)
+40,GST_NO,3,2,1,1,,GST registration number
+41,TAX_DEDUCTED,3,2,1,1,,"Tax/TDS amounts deducted, deposited, payable"
+42,NATURE_OF_BUSINESS,2,1,1,0,,Principal activity / economic activity
+43,BRANCH_STRUCTURE,2,2,0,1,,Head office / branch particulars
+44,GEO_COORDINATES,2,2,0,1,,Geo co-ordinates of establishment
+45,EMP_MARITAL_STATUS,2,1,1,0,,Marital status
+46,EMP_ADDRESS,2,1,1,0,,Employee address (full decomposition)
+47,EXIT_CAUSE_DATE,2,2,0,1,,Cause and date of exit/disablement/death
+48,SERVICE_YEARS,2,2,0,1,,Years of continuous service
+49,MATERNITY_PAYMENTS,2,1,1,0,,Maternity benefit amounts and dates
+50,MEDICAL_CERT,2,2,0,1,,Medical certification particulars
+51,GIG_WORKER_COUNT,2,1,1,0,,Gig/platform workers engaged (1 Apr)
+52,ANNUAL_TURNOVER,2,1,1,0,,Annual turnover (excl. central taxes)
+53,CONSTRUCTION_AREA,2,1,1,0,,Area of construction (proposed/completed)
+54,CONSTRUCTION_COST,2,1,1,0,,Estimated/incurred cost (rate basis + CE certificate)
+55,CESS_AMOUNT,2,1,1,0,,Cess computed (% x cost)
+56,CESS_PAYMENTS,2,1,1,0,,Advance/instalment cess payments
+57,HEADER_BLOCK_REPEAT,2,1,1,0,,Verbatim 8-field header re-asked (XVI & XVIII repeat XV)
+58,NIC_CODE,2,1,1,0,,NIC activity classification
+59,OPERATION_EVENT,2,1,1,0,,Commencement/cessation/closure particulars
+60,ACCIDENT_EVENT,2,1,1,0,,Accident date/shift/hour/cause
+61,WAGE_PERIOD,2,1,1,0,,Wage period and periodicity
+62,ENFORCEMENT_PARTICULARS,2,2,0,1,,Improvement/composition particulars
+63,STRIKE_LOCKOUT,2,1,1,0,,"Strike/lock-out notice: union or representative slate / employer, date, reasons"
+64,SEPARATION_REASON,2,1,1,0,,Reasons and establishment particulars (Annexure-I)
+65,SEPARATION_NOTICE,2,1,1,0,,Notice/pay-in-lieu dates to workers
+66,CIN,2,2,0,1,,Corporate Identification Number (MCA)
+67,TAN,2,2,0,1,,TAN of establishment (CBDT deductor id)
+68,EMP_DECLARATIONS,2,1,1,0,,"Employee-declared facts: regime option, investments, rent, other income, prev-employer salary"
+69,EMP_RELIGION,1,1,0,0,,Religion
+70,EMP_DEPT,1,1,0,0,,Department/branch/section
+71,EMP_SUPERANNUATION,1,1,0,0,,Date of superannuation
+72,PF_NO,1,1,0,0,,EPFO PF Registration Number
+73,MIGRANT_COUNT,1,1,0,0,,Maximum migrant workers
+74,FTE_COUNT,1,1,0,0,,Fixed term employees
+75,HOURS_SHIFTS,1,1,0,0,,Working hours and shifts
+76,WELFARE_AMENITIES,1,1,0,0,,Canteen/creche/ambulance/safety committee/officers/QMP
+77,IR_BODIES,1,1,0,0,,"Works committee, GRC, unions, negotiating union/council"
+78,MANDAYS_LOST,1,1,0,0,,Man-days lost (strike/lockout/accident)
+79,MATERNITY_STATS,1,1,0,0,,Aggregate maternity benefit statistics
+80,BONUS_PAID,1,1,0,0,,"Bonus coverage, amount, date"
+81,ACCIDENT_STATS,1,1,0,0,,"Accidents, dangerous occurrences, diseases"
+82,MINE_IDENTITY,1,1,0,0,,Mine-specific identity block
+83,MINE_SAFETY_PARAMS,1,1,0,0,,Mining method & safety parameters
+84,MINE_HEALTH_TRAINING,1,1,0,0,,IME/PME and training counts
+85,MINE_SAFETY_PLAN,1,1,0,0,,Safety management plan and hazards
+86,VACANCY_PARTICULARS,1,1,0,0,,Per-vacancy particulars (designation to pay)
+87,VACANCY_FLOWS,1,1,0,0,,Vacancies occurred/reported/filled by source
+88,VACANCY_SHORTAGES,1,1,0,0,,Unfilled posts with skill requirements
+89,VACANCY_FORECAST,1,1,0,0,,Next-FY manpower forecast by occupation
+90,COMPLETION_DATE,1,1,0,0,,Date of completion
+91,GROUNDS_FACTS,1,1,0,0,,Grounds/facts/injury/wage particulars
+92,RELIEF_AMOUNTS,1,1,0,0,,Relief/amounts/compounding sums
+93,MANAGER_DETAILS,1,1,0,0,,Manager/agent particulars
+94,SECTOR_BLOCK,1,1,0,0,,Sector-specific blocks (factory/mine/dock/BOCW)
+95,ESIC_EMPLOYER_CODE,1,1,0,0,,ESIC employer code
+96,INJURED_PERSON,1,1,0,0,,Injured person identity/particulars
+97,ACCIDENT_LOCATION,1,1,0,0,,Accident location within establishment
+98,WORK_PERIODS,1,1,0,0,,"Work periods by groups/relays, gender-wise"
+99,EMP_CONTACT,1,1,0,0,,Employee mobile
+100,EPS_NPS,1,1,0,0,,EPS/NPS membership
+101,EMP_PAY_HISTORY,1,1,0,0,,Posting/pay/promotion history
+102,XVII_AGGREGATES,1,1,0,0,,"Annual aggregates (welfare, IR, separations, maternity, bonus, accidents)"
+103,MINE_BLOCKS,1,1,0,0,,Mines Part-II blocks
+104,IT_BENEFIT,1,1,0,0,,s.36(1)(iv) IT contribution/benefit by FY
+105,IT_ARTEFACTS,1,1,0,0,,"Balance Sheet, Form 26AS, Form 26Q uploads (mandatory)"
+106,LICENCE_PARTICULARS,1,1,0,0,,Licence terms/security deposit
+107,WORKER_CERT,1,1,0,0,,Experience certificate particulars
+108,AGREEMENT_PARTICULARS,1,1,0,0,,Producer-AV worker agreement
+109,STANDING_ORDER_STATUS,1,1,0,0,,Standing-order certification lifecycle incl. unique continuous number
+110,SERVICE_CHANGE,1,1,0,0,,"Intended change of service conditions, workers affected, dates"
+111,SETTLEMENT_TERMS,1,1,0,0,,"Settlement parties, representatives, terms"
+112,ARBITRATION_TERMS,1,1,0,0,,"Arbitration parties, dispute, arbitrator, reference terms"
+113,MONEY_CLAIM,1,1,0,0,,"Dues/benefit claims: worker, employer, amount, basis"
+114,DECLARATIONS,1,1,0,0,,"Dues/compensation, insolvency, compliance, court-case declarations"
+115,CONTRACT_COMMERCIALS,1,1,0,0,,Contract value / work-order commercial terms
+116,PT_REG_NO,1,1,0,0,,PTRC / PT registration number (state)
+117,LWF_REG_NO,1,1,0,0,,LWF establishment registration number (state board)
+118,FIN_STATEMENTS,1,1,0,0,,Balance sheet / P&L / audit report annexures demanded
+119,PRODUCTION_DATA,1,1,0,0,,Item-wise annual (3yr) + month-wise (12m) production figures
+120,GROUP_COMPANIES,1,1,0,0,,Inter-connected companies / common-management entities
