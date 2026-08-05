@@ -1,0 +1,182 @@
+{
+  "version": "0.1",
+  "scope": "The four apex terms across 8 instruments: 4 labour codes, 3 Telangana acts, IT Act (TDS).",
+  "method": "Each term has ONE base concept plus per-instrument edits. Nothing is harmonised away; divergence is encoded, not resolved.",
+  "sign_convention": "'- x' removes a requirement present in the constant (WIDENS the set). '+ x' adds a component absent from it. Substitution written '- x + y'.",
+  "provenance": "Equations and statutory anchors from Labour_Codes_Definitions_Full_Comparative.xlsx (Definition_Algebra, Critical_Divergences). Machine predicates below are an encoding of that algebra and require legal review before operational use.",
+
+  "atoms": {
+    "c":  {"name": "on wages", "test": "wages_for_period > 0"},
+    "d":  {"name": "for hire or reward", "test": "hire_or_reward == true"},
+    "E":  {"name": "an establishment", "test": "premises_type is an establishment"},
+    "b":  {"name": "an industrial establishment", "test": "industrial_establishment == true"},
+    "e":  {"name": "or any other work", "test": "work_nature may be OTHER (open list)"},
+    "f":  {"name": "directly or through a contractor", "test": "engagement_route in {direct, contractor}"},
+    "g":  {"name": "mines proviso", "test": "sector == mine and working_in_mine (overrides c)"},
+    "h":  {"name": "wage ceiling gate", "test": "wages <= scheme_ceiling"},
+    "i":  {"name": "counting rule", "test": "threshold counts ignore h"},
+    "j":  {"name": "Second Schedule set", "test": "second_schedule_member == true"},
+    "W":  {"name": "closed work list", "value": ["skilled", "unskilled", "manual", "operational", "supervisory", "managerial", "administrative", "technical", "clerical"]},
+    "theta": {"name": "supervisory wage dial", "note": "The same clause, four settings: 1600 (TG LWF) / 15000 (Wage) / 18000 (IR, OSH)."}
+  },
+
+  "terms": {
+
+    "employee": {
+      "class": "SUBSTANTIALLY-DIFFERENT",
+      "instruments_defining": 7,
+      "base": "EMP_W = a = c AND d AND E AND work_nature IN W, apprentice excluded",
+      "why_it_matters": "Cannot be a single boolean on a payroll record. Must be a per-instrument derivation over (work type, wage level, engagement route, premises type).",
+      "variants": [
+        {"instrument": "Code on Wages 2019", "anchor": "s.2(k)", "equation": "a", "role": "CONSTANT",
+         "effect": "Employed on wages by an establishment for hire or reward, closed work list."},
+        {"instrument": "IR Code 2020", "anchor": "s.2(l)", "equation": "a - c - E + b",
+         "effect": "Wages hook dropped; scope narrowed to industrial establishment premises."},
+        {"instrument": "OSH Code 2020", "anchor": "s.2(t)", "equation": "a - d + e + g",
+         "effect": "Hire-or-reward dropped; open work list; unpaid mine workers pulled in."},
+        {"instrument": "SS Code 2020", "anchor": "s.2(26)", "equation": "a - d + e + f",
+         "effect": "Contractor route included - this single limb is why the PF/ESI contractor machinery exists.",
+         "overlays": {
+           "h": "For Ch.III/Ch.IV, membership gated at the notified wage ceiling",
+           "i": "Above-ceiling employees STILL COUNT for coverage thresholds",
+           "j": "For Ch.VII (Employee's Compensation), the Second Schedule set instead"}},
+        {"instrument": "TG PT Act 1987", "anchor": "s.2(e), s.2(j)", "equation": "salaried - casual_wage_earners",
+         "effect": "Salary-only test. Residual limb makes coverage effectively universal-salaried. Adds a State-NEXUS rule: operations, not HQ, decide."},
+        {"instrument": "TG LWF Act 1987", "anchor": "s.2(2)", "equation": "a - managerial - administrative - operational - (supervisory AND wage > 1600) - part_time - apprentice + (>=30 days in 12 months)",
+         "effect": "The worker-machine under the name 'employee', with theta fossilised at Rs 1,600 - below half of any current minimum wage, so it excludes every supervisor in the state.",
+         "flags": ["THETA_FOSSILISED"]},
+        {"instrument": "TS S&E Act 1988", "anchor": "s.2(8)", "equation": "wholly_or_principally_employed + apprentice - live_in_dependent_kin_without_wages",
+         "effect": "No work list, no theta, no wage hook. Apprentice INCLUDED - the opposite of every other instrument in the stack."},
+        {"instrument": "IT Act (TDS)", "anchor": "none - common law", "equation": "employment_relation AND salary_under_s17",
+         "effect": "The widest net is the undefined one.", "flags": ["ABSENT_BY_DESIGN"]}
+      ],
+      "coverage_ladder": "EMP_TDS >= EMP_PT(TG) >= SS_counted >= SS_member ; EMP_LWF(TG) narrowest"
+    },
+
+    "worker": {
+      "class": "DIVERGENT (parameterised)",
+      "base": "w(theta, scope) = employed in <scope> on work in {manual, unskilled, skilled, technical, operational, clerical, supervisory} MINUS managerial/administrative capacity MINUS (supervisory AND wage > theta) MINUS apprentice",
+      "why_it_matters": "One formula, one constant differs. A Rs 16,500 supervisor flips membership across codes.",
+      "variants": [
+        {"instrument": "Code on Wages 2019", "anchor": "s.2(z)", "equation": "w(15000, industry)"},
+        {"instrument": "IR Code 2020", "anchor": "s.2(zr)", "equation": "w(18000, industry)",
+         "overlays": {"ch_iii": "For the Trade Union chapter, ALL persons employed in trade or industry"}},
+        {"instrument": "OSH Code 2020", "anchor": "s.2(zzl)", "equation": "w(18000, establishment)"},
+        {"instrument": "SS Code 2020", "anchor": "-", "equation": "none - species sets instead"},
+        {"instrument": "TG LWF Act 1987", "anchor": "s.2(2)", "equation": "w(1600, establishment) under the name 'employee'"}
+      ]
+    },
+
+    "employer": {
+      "class": "DIVERGENT - TWO CONCEPTS",
+      "base": "er = person who employs one or more employees, directly or through any person, on his own behalf or another's, plus four inclusion limbs {head of govt department, factory occupier/manager, contractor, legal representative of deceased employer}",
+      "why_it_matters": "Two irreconcilable concepts: RELATIONAL (who engages) versus FUNCTIONAL (who disburses). Deduction duties attach to the paymaster, engagement duties to the engager. These can be different persons.",
+      "variants": [
+        {"instrument": "Code on Wages 2019", "anchor": "s.2(l)", "equation": "er", "concept": "relational"},
+        {"instrument": "SS Code 2020", "anchor": "s.2(27)", "equation": "er", "concept": "relational"},
+        {"instrument": "OSH Code 2020", "anchor": "s.2(u)", "equation": "er", "concept": "relational"},
+        {"instrument": "IR Code 2020", "anchor": "s.2(m)", "equation": "er + (or WORKER in the employed-set)", "concept": "relational",
+         "effect": "IR alone writes 'employee or worker'."},
+        {"instrument": "TG PT Act 1987", "anchor": "s.2(f)", "equation": "person_responsible_for_disbursement + head_of_office + manager_or_agent", "concept": "FUNCTIONAL",
+         "effect": "The disbursement test IS the definition. No relational limb at all."},
+        {"instrument": "TG LWF Act 1987", "anchor": "s.2(3)", "equation": "er + factory_manager_per_Factories_Act_1948_s.7(1)(f)", "concept": "relational",
+         "flags": ["DANGLING: Factories Act 1948 repealed by OSH Code"]},
+        {"instrument": "TS S&E Act 1988", "anchor": "s.2(9)", "equation": "er", "concept": "relational"},
+        {"instrument": "IT Act (TDS)", "anchor": "deductor, s.392 duty", "equation": "person_paying_salary", "concept": "FUNCTIONAL"}
+      ]
+    },
+
+    "establishment": {
+      "class": "SUBSTANTIALLY-DIFFERENT",
+      "base": "s = EST_W = place where industry, trade, business, manufacture or occupation is carried on, including a Government establishment. A PLACE. No headcount.",
+      "why_it_matters": "The root legal object of the registration layer is not uniform across the four codes that share ONE common registration form. Registration interoperability rests on a definitional fault line.",
+      "edits": {
+        "s1": "+ sector list: {factory, motor transport undertaking, newspaper, audio-visual, BOCW, plantation, mine, port/dock vicinity}",
+        "s2": "+ branch MERGER: departments and branches, same or different places, = ONE establishment",
+        "s3": "x count(workers) >= 10 built INTO the definition (except mines/ports; hazardous-notified override to zero)",
+        "s4": "+ factory-for-registration override: >=10 workers deemed establishment notwithstanding factory 20/40"
+      },
+      "variants": [
+        {"instrument": "Code on Wages 2019", "anchor": "s.2(m)", "equation": "s", "role": "CONSTANT"},
+        {"instrument": "SS Code 2020", "anchor": "s.2(29)", "equation": "s + s1 + s2",
+         "effect": "Branch MERGER - all branches are ONE establishment for PF."},
+        {"instrument": "OSH Code 2020", "anchor": "s.2(v)", "equation": "(s + s1) x s3 + s4",
+         "effect": "Establishment IS place x headcount. A 6-worker shop is not an OSH establishment at all."},
+        {"instrument": "IR Code 2020", "anchor": "s.2(r)", "equation": "b - industrial establishment or undertaking, own deeming with severable-unit rule"},
+        {"instrument": "TG PT Act 1987", "anchor": "s.2(j) Explanation", "equation": "every BRANCH deemed a separate PERSON",
+         "effect": "Directly OPPOSITE to the SS branch-merger. The same multi-branch company is ONE establishment for EPF and N persons for TG PT.",
+         "flags": ["DIRECT_CONTRADICTION_WITH_SS"]},
+        {"instrument": "TG LWF Act 1987", "anchor": "s.2(4)", "equation": "REF(AP Shops & Establishments Act 1966 s.2(10))",
+         "flags": ["DANGLING: superseded by the 1988 Act - composed entirely of dangling pointers"]},
+        {"instrument": "TS S&E Act 1988", "anchor": "s.2(10)", "equation": "the state's operative establishment concept - shop vs commercial establishment partition"}
+      ]
+    },
+
+    "wages": {
+      "class": "HARMONISED IN THE CODES, DIVERGENT OUTSIDE",
+      "base": "wg = {basic + dearness allowance + retaining allowance}, with the exclusion list, the 50% add-back proviso, and the 15% in-kind cap.",
+      "why_it_matters": "The four codes achieved identity here - this is the one genuine harmonisation success. Then PT, LWF, S&E and TDS each define their own base. Three live wage bases plus one dead pointer.",
+      "variants": [
+        {"instrument": "Code on Wages 2019", "anchor": "s.2(y)", "equation": "wg", "role": "CONSTANT"},
+        {"instrument": "IR Code 2020", "anchor": "s.2(zq)", "equation": "wg", "effect": "Identity. Only drafting variant: 'salary' singular."},
+        {"instrument": "SS Code 2020", "anchor": "s.2(88)", "equation": "wg", "effect": "Identity."},
+        {"instrument": "OSH Code 2020", "anchor": "s.2(zzj)", "equation": "wg", "effect": "Identity."},
+        {"instrument": "TG PT Act 1987", "anchor": "s.2(m)", "equation": "wg_regular + s17_perquisites - bonus_any_form - gratuity",
+         "effect": "Imports the TAX salary concept mid-definition. WIDER than code wages: perquisites are in.",
+         "flags": ["DANGLING: s.17 points at IT Act 1961, repealed; re-routes to IT Act 2025 ss.17/18"]},
+        {"instrument": "TG LWF Act 1987", "anchor": "s.2(12)", "equation": "REF(Payment of Wages Act 1936) + statutory_bonus",
+         "flags": ["DANGLING: PoW 1936 repealed by Wage Code s.69(1); bonus limb points at Bonus Act 1965, also repealed"]},
+        {"instrument": "TS S&E Act 1988", "anchor": "s.2(23)", "equation": "wg + terms_based_bonus - HRA_expressly",
+         "effect": "The SIXTH wage concept. Includes terms-based bonus, expressly excludes HRA."},
+        {"instrument": "IT Act (TDS)", "anchor": "s.17 family", "equation": "salary + perquisites + profits_in_lieu",
+         "effect": "The widest base."}
+      ],
+      "component_matrix": {
+        "_legend": "IN = expressly included, OUT = expressly excluded, COND = conditional, SILENT = definition does not address",
+        "_instruments": ["Codes", "TG_PT", "TG_LWF", "TS_S&E"],
+        "basic":                    ["IN", "IN", "IN", "IN"],
+        "dearness_allowance":       ["IN", "IN", "IN", "IN"],
+        "retaining_allowance":      ["IN", "COND", "COND", "COND"],
+        "house_rent_allowance":     ["OUT+addback", "COND", "SILENT", "OUT"],
+        "overtime":                 ["OUT+addback", "COND", "SILENT", "SILENT"],
+        "commission":               ["OUT+addback", "COND", "SILENT", "SILENT"],
+        "statutory_bonus":          ["OUT", "OUT", "IN", "IN"],
+        "conveyance":               ["OUT+addback", "COND", "OUT", "SILENT"],
+        "house_accommodation":      ["OUT+15pct_cap", "IN", "OUT", "SILENT"],
+        "employer_pf_contribution": ["OUT", "OUT", "OUT", "SILENT"],
+        "gratuity":                 ["OUT", "OUT", "OUT", "SILENT"],
+        "perquisites_s17":          ["SILENT", "IN", "SILENT", "SILENT"]
+      }
+    },
+
+    "factory": {
+      "class": "COUNT-FUNCTION DIVERGENCE",
+      "why_it_matters": "Threshold, counting-set AND process-enum all differ. Near the thresholds the SAME payroll produces different counts per code.",
+      "variants": [
+        {"instrument": "SS Code 2020", "anchor": "s.2(32)", "equation": "premises x mfg x count(EMP_SS) >= 10(power)/20(no power) - {mine, hotel, restaurant, eating place}",
+         "counts": "EMPLOYEES (includes managerial)"},
+        {"instrument": "OSH Code 2020", "anchor": "s.2(w)", "equation": "premises x mfg' x count(WKR_OSH(18000)) >= 20(power)/40(no power)",
+         "counts": "WORKERS (excludes managerial and 18k supervisors)",
+         "effect": "mfg' = mfg - refining + packing"},
+        {"instrument": "Code on Wages 2019", "anchor": "s.2(n)", "equation": "REF(Factories Act 1948 s.2(m))",
+         "flags": ["DANGLING: repealed by OSH s.143"]}
+      ]
+    }
+  },
+
+  "dangling_pointer_ledger": [
+    {"instrument": "Code on Wages", "term": "factory", "points_at": "Factories Act 1948 s.2(m)", "killed_by": "OSH Code s.143"},
+    {"instrument": "Code on Wages", "term": "Tribunal", "points_at": "ID Act 1947 s.2(r)", "killed_by": "IR Code s.104(1)(c)"},
+    {"instrument": "IR Code", "term": "mine", "points_at": "Mines Act 1952", "killed_by": "OSH Code"},
+    {"instrument": "IR Code", "term": "unorganised sector", "points_at": "UWSSA 2008 s.2(l)", "killed_by": "SS Code s.164(1)"},
+    {"instrument": "SS Code", "term": "mine", "points_at": "Mines Act 1952", "killed_by": "OSH Code"},
+    {"instrument": "SS Code", "term": "sales promotion employees", "points_at": "SPE Act 1976 s.2(d)", "killed_by": "OSH Code"},
+    {"instrument": "SS Code", "term": "Tribunal", "points_at": "ID Act 1947 s.7A", "killed_by": "IR Code"},
+    {"instrument": "TG LWF", "term": "establishment", "points_at": "AP S&E Act 1966 s.2(10)", "killed_by": "TS S&E Act 1988"},
+    {"instrument": "TG LWF", "term": "employer", "points_at": "Factories Act 1948 s.7(1)(f)", "killed_by": "OSH Code"},
+    {"instrument": "TG LWF", "term": "wages", "points_at": "Payment of Wages Act 1936", "killed_by": "Wage Code s.69(1)"},
+    {"instrument": "TG LWF", "term": "unpaid accumulations", "points_at": "EPF Act 1952", "killed_by": "SS Code s.164"},
+    {"instrument": "TG PT", "term": "salary", "points_at": "IT Act 1961 s.17", "killed_by": "IT Act 2025"},
+    {"instrument": "TS S&E", "term": "employee/commercial establishment/factory", "points_at": "Factories Act 1948 (x3)", "killed_by": "OSH Code"}
+  ]
+}
