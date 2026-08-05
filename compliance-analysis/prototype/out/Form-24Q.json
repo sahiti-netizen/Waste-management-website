@@ -1,0 +1,149 @@
+{
+  "form_id": "Form-24Q",
+  "authority": "Income Tax",
+  "domain": "Income Tax",
+  "cadence": "quarterly",
+  "fields": {
+    "TAN": "HYDS29187B",
+    "PAN": "AAJCS7412N",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "EST_ADDRESS": {
+      "premise": "Plot 47, Phase III",
+      "street": "IDA Jeedimetla",
+      "city": "Hyderabad",
+      "district": "Medchal-Malkajgiri",
+      "state": "Telangana",
+      "pin": "500055"
+    },
+    "RETURN_PERIOD": "2026-04",
+    "TDS_SALARY": 49683,
+    "TAXABLE_SALARY": 62286576,
+    "TDS_DEDUCTEE_LINES": [
+      {
+        "EMP_PAN": "AXYPS1010A",
+        "EMP_NAME": "Ravi Sastry",
+        "TAXABLE_SALARY": 1283400,
+        "TDS_SALARY": 6284
+      },
+      {
+        "EMP_PAN": "DXYPS1023D",
+        "EMP_NAME": "Sridhar Murthy",
+        "TAXABLE_SALARY": 1283400,
+        "TDS_SALARY": 6284
+      },
+      {
+        "EMP_PAN": "IXYPS1048I",
+        "EMP_NAME": "Bhavani Prasad",
+        "TAXABLE_SALARY": 1238112,
+        "TDS_SALARY": 5695
+      },
+      {
+        "EMP_PAN": "CXYPS1052C",
+        "EMP_NAME": "Kiran Rao",
+        "TAXABLE_SALARY": 1283400,
+        "TDS_SALARY": 6284
+      },
+      {
+        "EMP_PAN": "AXYPS1100A",
+        "EMP_NAME": "Ravi Murthy",
+        "TAXABLE_SALARY": 1283400,
+        "TDS_SALARY": 6284
+      },
+      {
+        "EMP_PAN": "BXYPS1111B",
+        "EMP_NAME": "Padma Prasad",
+        "TAXABLE_SALARY": 1283400,
+        "TDS_SALARY": 6284
+      },
+      {
+        "EMP_PAN": "CXYPS1122C",
+        "EMP_NAME": "Rajesh Yadav",
+        "TAXABLE_SALARY": 1283400,
+        "TDS_SALARY": 6284
+      },
+      {
+        "EMP_PAN": "EXYPS1124E",
+        "EMP_NAME": "Padma Goud",
+        "TAXABLE_SALARY": 1283400,
+        "TDS_SALARY": 6284
+      }
+    ],
+    "PAYMENT_REFS": [
+      {
+        "type": "TDS 24Q",
+        "trrn": "0000120260507012",
+        "amount": 49683,
+        "utr": "HDFCR52026050700238"
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "TAN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "PAN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_ADDRESS",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "TDS_SALARY",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "TAXABLE_SALARY",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "TDS_DEDUCTEE_LINES",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "PAYMENT_REFS",
+      "status": "derived",
+      "atoms": 5,
+      "scope": [
+        "TDS 24Q"
+      ]
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}

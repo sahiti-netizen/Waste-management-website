@@ -1,0 +1,94 @@
+{
+  "form_id": "Form-26Q",
+  "authority": "Income Tax",
+  "domain": "Income Tax",
+  "cadence": "quarterly",
+  "fields": {
+    "TAN": "HYDS29187B",
+    "PAN": "AAJCS7412N",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "RETURN_PERIOD": "2026-04",
+    "TDS_CONTRACTOR": 41920,
+    "CONTRACTOR_LIST": [
+      {
+        "contractor": "Ganesh Housekeeping",
+        "gstin": "36AAKCG9012Q1Z0",
+        "amount": 1632000,
+        "tds": 16320,
+        "bills": 5
+      },
+      {
+        "contractor": "Sai Manpower Services",
+        "gstin": "36AAJCS5678P1Z6",
+        "amount": 1280000,
+        "tds": 25600,
+        "bills": 6
+      }
+    ],
+    "PAYMENT_REFS": [
+      {
+        "type": "TDS 26Q",
+        "trrn": "0000120260507013",
+        "amount": 41920,
+        "utr": "HDFCR52026050700239"
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "TAN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "PAN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "TDS_CONTRACTOR",
+      "status": "derived",
+      "atoms": 28,
+      "scope": null
+    },
+    {
+      "element": "CONTRACTOR_LIST",
+      "status": "derived",
+      "atoms": 28,
+      "scope": null
+    },
+    {
+      "element": "PAYMENT_REFS",
+      "status": "derived",
+      "atoms": 5,
+      "scope": [
+        "TDS 26Q"
+      ]
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}

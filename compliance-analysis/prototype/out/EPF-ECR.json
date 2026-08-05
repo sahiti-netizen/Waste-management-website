@@ -1,0 +1,1742 @@
+{
+  "form_id": "EPF-ECR",
+  "authority": "EPFO",
+  "domain": "Labour",
+  "cadence": "monthly",
+  "fields": {
+    "EPF_CODE": "TG/HYD/0048291",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "EST_ADDRESS": {
+      "premise": "Plot 47, Phase III",
+      "street": "IDA Jeedimetla",
+      "city": "Hyderabad",
+      "district": "Medchal-Malkajgiri",
+      "state": "Telangana",
+      "pin": "500055"
+    },
+    "LIN": "1-2938-4756-1",
+    "RETURN_PERIOD": "2026-04",
+    "HEADCOUNT_EPF_MEMBERS": 180,
+    "EPF_WAGES": 2527355,
+    "EPF_EE_CONTRIB": 303290,
+    "EPF_ER_CONTRIB": 92702,
+    "EPS_CONTRIB": 210588,
+    "EPF_ECR_LINES": [
+      {
+        "UAN": "140203835167",
+        "EMP_NAME": "Latha Chary",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "180472566527",
+        "EMP_NAME": "Prakash Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "163047309620",
+        "EMP_NAME": "Kavitha Sharma",
+        "EPF_WAGES": 12115,
+        "EPF_EE": 1454,
+        "EPS": 1009,
+        "EPF_ER": 445,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "140321773703",
+        "EMP_NAME": "Venkatesh Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "174660981831",
+        "EMP_NAME": "Naresh Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "139580846986",
+        "EMP_NAME": "Sunitha Yadav",
+        "EPF_WAGES": 10463,
+        "EPF_EE": 1256,
+        "EPS": 872,
+        "EPF_ER": 384,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "133254662026",
+        "EMP_NAME": "Anitha Devi",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "129887545067",
+        "EMP_NAME": "Naresh Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "133467288228",
+        "EMP_NAME": "Kiran Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "183004037177",
+        "EMP_NAME": "Kavitha Sastry",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "177264642049",
+        "EMP_NAME": "Ravi Sastry",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "174829451739",
+        "EMP_NAME": "Mahesh Devi",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "148593426984",
+        "EMP_NAME": "Suresh Kumar",
+        "EPF_WAGES": 10836,
+        "EPF_EE": 1300,
+        "EPS": 903,
+        "EPF_ER": 397,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "151996172078",
+        "EMP_NAME": "Bhavani Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "145319505718",
+        "EMP_NAME": "Radha Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "167647477421",
+        "EMP_NAME": "Venkatesh Prasad",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "146641821437",
+        "EMP_NAME": "Padma Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "144273249269",
+        "EMP_NAME": "Suresh Yadav",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "186313240737",
+        "EMP_NAME": "Kiran Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "128793999949",
+        "EMP_NAME": "Sunitha Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "156125823223",
+        "EMP_NAME": "Kavitha Devi",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "119968236518",
+        "EMP_NAME": "Suresh Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "199304799769",
+        "EMP_NAME": "Bhavani Sastry",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "187830115437",
+        "EMP_NAME": "Sridhar Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "185153958206",
+        "EMP_NAME": "Latha Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "180208822097",
+        "EMP_NAME": "Anitha Kumar",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "178202253494",
+        "EMP_NAME": "Sridhar Kumar",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "133111851073",
+        "EMP_NAME": "Ravi Reddy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "162773534015",
+        "EMP_NAME": "Sunitha Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "184417071929",
+        "EMP_NAME": "Naresh Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "188239912439",
+        "EMP_NAME": "Bhavani Yadav",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "118389449757",
+        "EMP_NAME": "Radha Rao",
+        "EPF_WAGES": 12547,
+        "EPF_EE": 1506,
+        "EPS": 1045,
+        "EPF_ER": 461,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "139441186176",
+        "EMP_NAME": "Anitha Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "129138727977",
+        "EMP_NAME": "Naresh Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "169377396725",
+        "EMP_NAME": "Sunitha Yadav",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "160861356345",
+        "EMP_NAME": "Padma Sastry",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "186209893082",
+        "EMP_NAME": "Padma Devi",
+        "EPF_WAGES": 12547,
+        "EPF_EE": 1506,
+        "EPS": 1045,
+        "EPF_ER": 461,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "114805925558",
+        "EMP_NAME": "Ravi Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "167539846047",
+        "EMP_NAME": "Ravi Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "160988776996",
+        "EMP_NAME": "Suresh Reddy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "184350621284",
+        "EMP_NAME": "Latha Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "152143798210",
+        "EMP_NAME": "Shanthi Prasad",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "135886240857",
+        "EMP_NAME": "Sunitha Rao",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "127225657822",
+        "EMP_NAME": "Radha Yadav",
+        "EPF_WAGES": 12115,
+        "EPF_EE": 1454,
+        "EPS": 1009,
+        "EPF_ER": 445,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "115557197279",
+        "EMP_NAME": "Mahesh Devi",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "195480921579",
+        "EMP_NAME": "Sunitha Prasad",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "126685499227",
+        "EMP_NAME": "Padma Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "111514727793",
+        "EMP_NAME": "Venkatesh Prasad",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "177869861163",
+        "EMP_NAME": "Bhavani Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "165908872546",
+        "EMP_NAME": "Naresh Kumar",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "122860840196",
+        "EMP_NAME": "Rajesh Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "185046073180",
+        "EMP_NAME": "Venkatesh Reddy",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "169900652757",
+        "EMP_NAME": "Kiran Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "156591812672",
+        "EMP_NAME": "Ravi Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "118428355083",
+        "EMP_NAME": "Mahesh Sharma",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "156825699893",
+        "EMP_NAME": "Venkatesh Goud",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "185633656817",
+        "EMP_NAME": "Swapna Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "134028658380",
+        "EMP_NAME": "Radha Reddy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "170994356593",
+        "EMP_NAME": "Kiran Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "190795220734",
+        "EMP_NAME": "Swapna Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "183120182602",
+        "EMP_NAME": "Swapna Reddy",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "148309299252",
+        "EMP_NAME": "Mahesh Chary",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "196336420837",
+        "EMP_NAME": "Shanthi Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "115626795876",
+        "EMP_NAME": "Kiran Yadav",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "147750146498",
+        "EMP_NAME": "Latha Kumar",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "141604402031",
+        "EMP_NAME": "Swapna Devi",
+        "EPF_WAGES": 10463,
+        "EPF_EE": 1256,
+        "EPS": 872,
+        "EPF_ER": 384,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "177121837065",
+        "EMP_NAME": "Ravi Sharma",
+        "EPF_WAGES": 10463,
+        "EPF_EE": 1256,
+        "EPS": 872,
+        "EPF_ER": 384,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "197291275106",
+        "EMP_NAME": "Anitha Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "112988406434",
+        "EMP_NAME": "Venkatesh Chary",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "198088344123",
+        "EMP_NAME": "Kavitha Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "166369212670",
+        "EMP_NAME": "Radha Murthy",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "117160697456",
+        "EMP_NAME": "Swapna Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "115061828274",
+        "EMP_NAME": "Naresh Chary",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "191877285003",
+        "EMP_NAME": "Prakash Sastry",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "170864715691",
+        "EMP_NAME": "Bhavani Chary",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "119073429774",
+        "EMP_NAME": "Prakash Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "124350594830",
+        "EMP_NAME": "Shanthi Goud",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "184311962879",
+        "EMP_NAME": "Radha Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "116829626115",
+        "EMP_NAME": "Bhavani Prasad",
+        "EPF_WAGES": 12547,
+        "EPF_EE": 1506,
+        "EPS": 1045,
+        "EPF_ER": 461,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "142560960940",
+        "EMP_NAME": "Kiran Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "165699922272",
+        "EMP_NAME": "Venkatesh Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "131265857887",
+        "EMP_NAME": "Kiran Chary",
+        "EPF_WAGES": 10463,
+        "EPF_EE": 1256,
+        "EPS": 872,
+        "EPF_ER": 384,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "151498353077",
+        "EMP_NAME": "Suresh Yadav",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "198269853367",
+        "EMP_NAME": "Rajesh Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "131032353844",
+        "EMP_NAME": "Anitha Naidu",
+        "EPF_WAGES": 10836,
+        "EPF_EE": 1300,
+        "EPS": 903,
+        "EPF_ER": 397,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "124355365417",
+        "EMP_NAME": "Swapna Goud",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "162592420129",
+        "EMP_NAME": "Kavitha Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "193908021028",
+        "EMP_NAME": "Anitha Reddy",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "174703975798",
+        "EMP_NAME": "Mahesh Reddy",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "153507752528",
+        "EMP_NAME": "Mahesh Prasad",
+        "EPF_WAGES": 12547,
+        "EPF_EE": 1506,
+        "EPS": 1045,
+        "EPF_ER": 461,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "140020021244",
+        "EMP_NAME": "Padma Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "164938572190",
+        "EMP_NAME": "Padma Kumar",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "157780573928",
+        "EMP_NAME": "Kavitha Murthy",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "138200614664",
+        "EMP_NAME": "Kavitha Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "133426816721",
+        "EMP_NAME": "Sunitha Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "121604367031",
+        "EMP_NAME": "Sridhar Yadav",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "113419861807",
+        "EMP_NAME": "Anitha Chary",
+        "EPF_WAGES": 13767,
+        "EPF_EE": 1652,
+        "EPS": 1147,
+        "EPF_ER": 505,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "153484704883",
+        "EMP_NAME": "Rajesh Reddy",
+        "EPF_WAGES": 10836,
+        "EPF_EE": 1300,
+        "EPS": 903,
+        "EPF_ER": 397,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "129534352941",
+        "EMP_NAME": "Anitha Sastry",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "179309128327",
+        "EMP_NAME": "Prakash Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "138817587540",
+        "EMP_NAME": "Ravi Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "170197268341",
+        "EMP_NAME": "Suresh Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "154064888132",
+        "EMP_NAME": "Radha Sastry",
+        "EPF_WAGES": 12547,
+        "EPF_EE": 1506,
+        "EPS": 1045,
+        "EPF_ER": 461,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "182504724590",
+        "EMP_NAME": "Mahesh Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "128931238698",
+        "EMP_NAME": "Suresh Devi",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "161322778492",
+        "EMP_NAME": "Kavitha Reddy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "180084677415",
+        "EMP_NAME": "Swapna Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "193401719962",
+        "EMP_NAME": "Ravi Kumar",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "196580027646",
+        "EMP_NAME": "Venkatesh Prasad",
+        "EPF_WAGES": 10836,
+        "EPF_EE": 1300,
+        "EPS": 903,
+        "EPF_ER": 397,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "166297447380",
+        "EMP_NAME": "Suresh Kumar",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "134345673697",
+        "EMP_NAME": "Rajesh Goud",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "139963140887",
+        "EMP_NAME": "Padma Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "124827278692",
+        "EMP_NAME": "Radha Prasad",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "178493520215",
+        "EMP_NAME": "Prakash Reddy",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "168068154429",
+        "EMP_NAME": "Anitha Sastry",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "173737067039",
+        "EMP_NAME": "Naresh Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "192068172732",
+        "EMP_NAME": "Sridhar Murthy",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "172867447423",
+        "EMP_NAME": "Shanthi Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "182128669671",
+        "EMP_NAME": "Latha Reddy",
+        "EPF_WAGES": 10836,
+        "EPF_EE": 1300,
+        "EPS": 903,
+        "EPF_ER": 397,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "149715187371",
+        "EMP_NAME": "Naresh Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "114244206425",
+        "EMP_NAME": "Venkatesh Kumar",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "121665766178",
+        "EMP_NAME": "Kiran Rao",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "162395961268",
+        "EMP_NAME": "Rajesh Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "194143713588",
+        "EMP_NAME": "Vijaya Prasad",
+        "EPF_WAGES": 12115,
+        "EPF_EE": 1454,
+        "EPS": 1009,
+        "EPF_ER": 445,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "140562771650",
+        "EMP_NAME": "Padma Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "183275291121",
+        "EMP_NAME": "Ganesh Sharma",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "182758655593",
+        "EMP_NAME": "Padma Naidu",
+        "EPF_WAGES": 10836,
+        "EPF_EE": 1300,
+        "EPS": 903,
+        "EPF_ER": 397,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "112317234444",
+        "EMP_NAME": "Sridhar Devi",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "152116293696",
+        "EMP_NAME": "Sunitha Chary",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "154377607789",
+        "EMP_NAME": "Bhavani Goud",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "143796669551",
+        "EMP_NAME": "Bhavani Chary",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "190705132252",
+        "EMP_NAME": "Naresh Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "188725489997",
+        "EMP_NAME": "Kiran Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "112352952551",
+        "EMP_NAME": "Suresh Chary",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "125663287838",
+        "EMP_NAME": "Ganesh Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "112428106206",
+        "EMP_NAME": "Vijaya Sharma",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "196645533510",
+        "EMP_NAME": "Ganesh Prasad",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "189059388350",
+        "EMP_NAME": "Rajesh Kumar",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "168069934444",
+        "EMP_NAME": "Venkatesh Kumar",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "186778016915",
+        "EMP_NAME": "Kavitha Chary",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "149483684950",
+        "EMP_NAME": "Mahesh Naidu",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "149659897273",
+        "EMP_NAME": "Kavitha Sharma",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "141211216615",
+        "EMP_NAME": "Shanthi Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "166768598931",
+        "EMP_NAME": "Sridhar Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "163589769213",
+        "EMP_NAME": "Venkatesh Prasad",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "171999993471",
+        "EMP_NAME": "Sridhar Rao",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "118575530881",
+        "EMP_NAME": "Venkatesh Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "195720188463",
+        "EMP_NAME": "Kavitha Yadav",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "133820585424",
+        "EMP_NAME": "Shanthi Sastry",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "151429594901",
+        "EMP_NAME": "Latha Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "139323965220",
+        "EMP_NAME": "Naresh Prasad",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "111636360476",
+        "EMP_NAME": "Swapna Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "125173361397",
+        "EMP_NAME": "Kiran Murthy",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "141872942868",
+        "EMP_NAME": "Bhavani Rao",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "136066135513",
+        "EMP_NAME": "Rajesh Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "190303829321",
+        "EMP_NAME": "Kavitha Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "121259696365",
+        "EMP_NAME": "Suresh Chary",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "164547032682",
+        "EMP_NAME": "Ravi Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "156165591822",
+        "EMP_NAME": "Shanthi Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "171834986189",
+        "EMP_NAME": "Ganesh Naidu",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "198269159401",
+        "EMP_NAME": "Rajesh Kumar",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "194296149088",
+        "EMP_NAME": "Mahesh Prasad",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "138326927825",
+        "EMP_NAME": "Ganesh Yadav",
+        "EPF_WAGES": 11210,
+        "EPF_EE": 1345,
+        "EPS": 934,
+        "EPF_ER": 411,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "170345721902",
+        "EMP_NAME": "Vijaya Naidu",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "194032406462",
+        "EMP_NAME": "Vijaya Murthy",
+        "EPF_WAGES": 14258,
+        "EPF_EE": 1711,
+        "EPS": 1188,
+        "EPF_ER": 523,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "UAN": "132607183225",
+        "EMP_NAME": "Suresh Murthy",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "158764538004",
+        "EMP_NAME": "Ravi Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "150651917443",
+        "EMP_NAME": "Venkatesh Murthy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "167124959057",
+        "EMP_NAME": "Swapna Reddy",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "151124938423",
+        "EMP_NAME": "Anitha Chary",
+        "EPF_WAGES": 12980,
+        "EPF_EE": 1558,
+        "EPS": 1081,
+        "EPF_ER": 477,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "172532693521",
+        "EMP_NAME": "Kiran Murthy",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "186682966127",
+        "EMP_NAME": "Kiran Reddy",
+        "EPF_WAGES": 14750,
+        "EPF_EE": 1770,
+        "EPS": 1229,
+        "EPF_ER": 541,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "132552921880",
+        "EMP_NAME": "Kavitha Yadav",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "130843981982",
+        "EMP_NAME": "Venkatesh Prasad",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "132688790670",
+        "EMP_NAME": "Kavitha Naidu",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "117676107142",
+        "EMP_NAME": "Suresh Goud",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "138285973317",
+        "EMP_NAME": "Mahesh Sharma",
+        "EPF_WAGES": 12115,
+        "EPF_EE": 1454,
+        "EPS": 1009,
+        "EPF_ER": 445,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "138086738938",
+        "EMP_NAME": "Mahesh Devi",
+        "EPF_WAGES": 12115,
+        "EPF_EE": 1454,
+        "EPS": 1009,
+        "EPF_ER": 445,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "UAN": "152479620274",
+        "EMP_NAME": "Kavitha Devi",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "UAN": "138752941082",
+        "EMP_NAME": "Ganesh Sharma",
+        "EPF_WAGES": 15000,
+        "EPF_EE": 1800,
+        "EPS": 1250,
+        "EPF_ER": 550,
+        "ATTENDANCE_DAYS": 30
+      }
+    ],
+    "PAYMENT_REFS": [
+      {
+        "type": "EPF ECR",
+        "trrn": "TG2026040001827",
+        "amount": 606580,
+        "utr": "HDFCR52026051400182"
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "EPF_CODE",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_ADDRESS",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "LIN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "HEADCOUNT_EPF_MEMBERS",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "EPF_WAGES",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "EPF_EE_CONTRIB",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "EPF_ER_CONTRIB",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "EPS_CONTRIB",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "EPF_ECR_LINES",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "PAYMENT_REFS",
+      "status": "derived",
+      "atoms": 5,
+      "scope": [
+        "EPF ECR"
+      ]
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}

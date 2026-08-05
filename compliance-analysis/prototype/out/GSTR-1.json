@@ -1,0 +1,524 @@
+{
+  "form_id": "GSTR-1",
+  "authority": "GSTN",
+  "domain": "GST",
+  "cadence": "monthly",
+  "fields": {
+    "GST_NO": "36AAJCS7412N1ZK",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "RETURN_PERIOD": "2026-04",
+    "TAXABLE_TURNOVER": 16204000,
+    "OUTPUT_CGST": 633690,
+    "OUTPUT_SGST": 633690,
+    "OUTPUT_IGST": 1649340,
+    "B2B_INVOICES": [
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0001",
+        "date": "2026-04-02",
+        "taxable_value": 185000,
+        "cgst": 16650,
+        "sgst": 16650,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0002",
+        "date": "2026-04-03",
+        "taxable_value": 428000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 77040,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0003",
+        "date": "2026-04-04",
+        "taxable_value": 185000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 33300,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0004",
+        "date": "2026-04-05",
+        "taxable_value": 185000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 33300,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0005",
+        "date": "2026-04-06",
+        "taxable_value": 428000,
+        "cgst": 38520,
+        "sgst": 38520,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0006",
+        "date": "2026-04-07",
+        "taxable_value": 596000,
+        "cgst": 53640,
+        "sgst": 53640,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0007",
+        "date": "2026-04-08",
+        "taxable_value": 185000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 33300,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0008",
+        "date": "2026-04-09",
+        "taxable_value": 742000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 133560,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0009",
+        "date": "2026-04-10",
+        "taxable_value": 264000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 47520,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0010",
+        "date": "2026-04-11",
+        "taxable_value": 428000,
+        "cgst": 38520,
+        "sgst": 38520,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0011",
+        "date": "2026-04-12",
+        "taxable_value": 428000,
+        "cgst": 38520,
+        "sgst": 38520,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0012",
+        "date": "2026-04-13",
+        "taxable_value": 742000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 133560,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0013",
+        "date": "2026-04-14",
+        "taxable_value": 185000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 33300,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0014",
+        "date": "2026-04-15",
+        "taxable_value": 264000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 47520,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0015",
+        "date": "2026-04-16",
+        "taxable_value": 596000,
+        "cgst": 53640,
+        "sgst": 53640,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0016",
+        "date": "2026-04-17",
+        "taxable_value": 742000,
+        "cgst": 66780,
+        "sgst": 66780,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0017",
+        "date": "2026-04-18",
+        "taxable_value": 264000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 47520,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0018",
+        "date": "2026-04-19",
+        "taxable_value": 312500,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 56250,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0019",
+        "date": "2026-04-20",
+        "taxable_value": 596000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 107280,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0020",
+        "date": "2026-04-21",
+        "taxable_value": 428000,
+        "cgst": 38520,
+        "sgst": 38520,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0021",
+        "date": "2026-04-22",
+        "taxable_value": 428000,
+        "cgst": 38520,
+        "sgst": 38520,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0022",
+        "date": "2026-04-23",
+        "taxable_value": 428000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 77040,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0023",
+        "date": "2026-04-24",
+        "taxable_value": 185000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 33300,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0024",
+        "date": "2026-04-25",
+        "taxable_value": 596000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 107280,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0025",
+        "date": "2026-04-26",
+        "taxable_value": 264000,
+        "cgst": 23760,
+        "sgst": 23760,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0026",
+        "date": "2026-04-27",
+        "taxable_value": 312500,
+        "cgst": 28125,
+        "sgst": 28125,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0027",
+        "date": "2026-04-28",
+        "taxable_value": 312500,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 56250,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0028",
+        "date": "2026-04-01",
+        "taxable_value": 264000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 47520,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0029",
+        "date": "2026-04-02",
+        "taxable_value": 312500,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 56250,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0030",
+        "date": "2026-04-03",
+        "taxable_value": 312500,
+        "cgst": 28125,
+        "sgst": 28125,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0031",
+        "date": "2026-04-04",
+        "taxable_value": 185000,
+        "cgst": 16650,
+        "sgst": 16650,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0032",
+        "date": "2026-04-05",
+        "taxable_value": 312500,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 56250,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0033",
+        "date": "2026-04-06",
+        "taxable_value": 596000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 107280,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0034",
+        "date": "2026-04-07",
+        "taxable_value": 428000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 77040,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0035",
+        "date": "2026-04-08",
+        "taxable_value": 596000,
+        "cgst": 53640,
+        "sgst": 53640,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0036",
+        "date": "2026-04-09",
+        "taxable_value": 185000,
+        "cgst": 16650,
+        "sgst": 16650,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0037",
+        "date": "2026-04-10",
+        "taxable_value": 185000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 33300,
+        "place_of_supply": "Tamil Nadu"
+      },
+      {
+        "gstin": "27AADCP3456J1Z7",
+        "invoice_no": "SPC/26-27/0038",
+        "date": "2026-04-11",
+        "taxable_value": 185000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 33300,
+        "place_of_supply": "Maharashtra"
+      },
+      {
+        "gstin": "29AAFCK7890K1Z1",
+        "invoice_no": "SPC/26-27/0039",
+        "date": "2026-04-12",
+        "taxable_value": 742000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 133560,
+        "place_of_supply": "Karnataka"
+      },
+      {
+        "gstin": "36AABCB1234F1Z5",
+        "invoice_no": "SPC/26-27/0040",
+        "date": "2026-04-13",
+        "taxable_value": 185000,
+        "cgst": 16650,
+        "sgst": 16650,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "36AACCD5678G1Z9",
+        "invoice_no": "SPC/26-27/0041",
+        "date": "2026-04-14",
+        "taxable_value": 742000,
+        "cgst": 66780,
+        "sgst": 66780,
+        "igst": 0,
+        "place_of_supply": "Telangana"
+      },
+      {
+        "gstin": "33AAECC9012H1Z3",
+        "invoice_no": "SPC/26-27/0042",
+        "date": "2026-04-15",
+        "taxable_value": 264000,
+        "cgst": 0,
+        "sgst": 0,
+        "igst": 47520,
+        "place_of_supply": "Tamil Nadu"
+      }
+    ],
+    "HSN_SUMMARY": [
+      {
+        "hsn": "84831099",
+        "taxable_value": 6310000,
+        "tax": 1135800,
+        "invoices": 14
+      },
+      {
+        "hsn": "87082900",
+        "taxable_value": 4416500,
+        "tax": 794970,
+        "invoices": 14
+      },
+      {
+        "hsn": "87089900",
+        "taxable_value": 5477500,
+        "tax": 985950,
+        "invoices": 14
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "GST_NO",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "TAXABLE_TURNOVER",
+      "status": "derived",
+      "atoms": 42,
+      "scope": null
+    },
+    {
+      "element": "OUTPUT_CGST",
+      "status": "derived",
+      "atoms": 42,
+      "scope": null
+    },
+    {
+      "element": "OUTPUT_SGST",
+      "status": "derived",
+      "atoms": 42,
+      "scope": null
+    },
+    {
+      "element": "OUTPUT_IGST",
+      "status": "derived",
+      "atoms": 42,
+      "scope": null
+    },
+    {
+      "element": "B2B_INVOICES",
+      "status": "derived",
+      "atoms": 42,
+      "scope": null
+    },
+    {
+      "element": "HSN_SUMMARY",
+      "status": "derived",
+      "atoms": 42,
+      "scope": null
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}

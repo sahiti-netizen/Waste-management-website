@@ -1,0 +1,93 @@
+{
+  "form_id": "PT-Return-TG",
+  "authority": "Telangana CTD",
+  "domain": "Labour",
+  "cadence": "monthly",
+  "fields": {
+    "PT_REG_NO": "36PT0049182",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "EST_ADDRESS": {
+      "premise": "Plot 47, Phase III",
+      "street": "IDA Jeedimetla",
+      "city": "Hyderabad",
+      "district": "Medchal-Malkajgiri",
+      "state": "Telangana",
+      "pin": "500055"
+    },
+    "RETURN_PERIOD": "2026-04",
+    "HEADCOUNT_TOTAL": 180,
+    "PT_BASIS": 6315548,
+    "PROFESSIONAL_TAX": 34700,
+    "PAYMENT_REFS": [
+      {
+        "type": "PT Telangana",
+        "trrn": "PT36202604001192",
+        "amount": 34700,
+        "utr": "HDFCR52026051000914"
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "PT_REG_NO",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_ADDRESS",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "HEADCOUNT_TOTAL",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "PT_BASIS",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "PROFESSIONAL_TAX",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "PAYMENT_REFS",
+      "status": "derived",
+      "atoms": 5,
+      "scope": [
+        "PT Telangana"
+      ]
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}

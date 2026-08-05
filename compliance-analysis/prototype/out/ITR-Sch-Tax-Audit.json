@@ -1,0 +1,108 @@
+{
+  "form_id": "ITR-Sch-Tax-Audit",
+  "authority": "Income Tax",
+  "domain": "Income Tax",
+  "cadence": "annual",
+  "fields": {
+    "PAN": "AAJCS7412N",
+    "CIN": "U29301TG2014PTC094782",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "ENTITY_TYPE": "Private Limited Company",
+    "RETURN_PERIOD": "2026-04",
+    "TAXABLE_TURNOVER": 16204000,
+    "SALARY_EXPENSE": 6315548,
+    "S43B_PAID_STATUS": [
+      {
+        "due": "EPF ECR",
+        "amount": 606580,
+        "paid_on": "2026-05-14",
+        "allowable": true
+      },
+      {
+        "due": "ESI",
+        "amount": 24444,
+        "paid_on": "2026-05-15",
+        "allowable": true
+      },
+      {
+        "due": "PT Telangana",
+        "amount": 34700,
+        "paid_on": "2026-05-10",
+        "allowable": true
+      },
+      {
+        "due": "TDS 24Q",
+        "amount": 49683,
+        "paid_on": "2026-05-07",
+        "allowable": true
+      },
+      {
+        "due": "TDS 26Q",
+        "amount": 41920,
+        "paid_on": "2026-05-07",
+        "allowable": true
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "PAN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "CIN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "ENTITY_TYPE",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "TAXABLE_TURNOVER",
+      "status": "derived",
+      "atoms": 42,
+      "scope": null
+    },
+    {
+      "element": "SALARY_EXPENSE",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "S43B_PAID_STATUS",
+      "status": "derived",
+      "atoms": 5,
+      "scope": null
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}

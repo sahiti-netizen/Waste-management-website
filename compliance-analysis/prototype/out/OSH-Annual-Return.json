@@ -1,0 +1,130 @@
+{
+  "form_id": "OSH-Annual-Return",
+  "authority": "Labour Dept",
+  "domain": "Labour",
+  "cadence": "annual",
+  "fields": {
+    "LIN": "1-2938-4756-1",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "EST_ADDRESS": {
+      "premise": "Plot 47, Phase III",
+      "street": "IDA Jeedimetla",
+      "city": "Hyderabad",
+      "district": "Medchal-Malkajgiri",
+      "state": "Telangana",
+      "pin": "500055"
+    },
+    "EMPLOYER_NAME": "Shreyas Precision Components Private Limited",
+    "ENTITY_TYPE": "Private Limited Company",
+    "RETURN_PERIOD": "2026-04",
+    "HEADCOUNT_TOTAL": 180,
+    "HEADCOUNT_BY_SEX": {
+      "M": 122,
+      "F": 58
+    },
+    "HEADCOUNT_HAZARDOUS": 55,
+    "ATTENDANCE_DAYS": 5317,
+    "GROSS_WAGES": 6315548,
+    "CONTRACTOR_LIST": [
+      {
+        "contractor": "Ganesh Housekeeping",
+        "gstin": "36AAKCG9012Q1Z0",
+        "amount": 1632000,
+        "tds": 16320,
+        "bills": 5
+      },
+      {
+        "contractor": "Sai Manpower Services",
+        "gstin": "36AAJCS5678P1Z6",
+        "amount": 1280000,
+        "tds": 25600,
+        "bills": 6
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "LIN",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_ADDRESS",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EMPLOYER_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "ENTITY_TYPE",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "HEADCOUNT_TOTAL",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "HEADCOUNT_BY_SEX",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "HEADCOUNT_HAZARDOUS",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "ATTENDANCE_DAYS",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "GROSS_WAGES",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "CONTRACTOR_LIST",
+      "status": "derived",
+      "atoms": 28,
+      "scope": null
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}

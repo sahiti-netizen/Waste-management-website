@@ -1,0 +1,332 @@
+{
+  "form_id": "ESI-Contribution",
+  "authority": "ESIC",
+  "domain": "Labour",
+  "cadence": "monthly",
+  "fields": {
+    "ESIC_EMPLOYER_CODE": "52000384710001099",
+    "EST_NAME": "Shreyas Precision Components Private Limited",
+    "EST_ADDRESS": {
+      "premise": "Plot 47, Phase III",
+      "street": "IDA Jeedimetla",
+      "city": "Hyderabad",
+      "district": "Medchal-Malkajgiri",
+      "state": "Telangana",
+      "pin": "500055"
+    },
+    "RETURN_PERIOD": "2026-04",
+    "HEADCOUNT_ESI_COVERED": 32,
+    "ESI_WAGES": 611150,
+    "ESI_EE_CONTRIB": 4586,
+    "ESI_ER_CONTRIB": 19858,
+    "ESI_LINES": [
+      {
+        "ESIC_IP_NO": "52262460710",
+        "EMP_NAME": "Kavitha Sharma",
+        "ESI_WAGES": 19974,
+        "ESI_EE": 150,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52973942462",
+        "EMP_NAME": "Sunitha Yadav",
+        "ESI_WAGES": 17454,
+        "ESI_EE": 131,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52476121202",
+        "EMP_NAME": "Suresh Kumar",
+        "ESI_WAGES": 18076,
+        "ESI_EE": 136,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52926452065",
+        "EMP_NAME": "Kavitha Devi",
+        "ESI_WAGES": 20900,
+        "ESI_EE": 157,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52555996277",
+        "EMP_NAME": "Radha Rao",
+        "ESI_WAGES": 20686,
+        "ESI_EE": 155,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52783517145",
+        "EMP_NAME": "Sunitha Yadav",
+        "ESI_WAGES": 19550,
+        "ESI_EE": 147,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52846974763",
+        "EMP_NAME": "Shanthi Prasad",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52712867919",
+        "EMP_NAME": "Radha Yadav",
+        "ESI_WAGES": 19974,
+        "ESI_EE": 150,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52208420062",
+        "EMP_NAME": "Sunitha Prasad",
+        "ESI_WAGES": 19550,
+        "ESI_EE": 147,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52210134703",
+        "EMP_NAME": "Naresh Kumar",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52311443692",
+        "EMP_NAME": "Mahesh Sharma",
+        "ESI_WAGES": 20900,
+        "ESI_EE": 157,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52746633806",
+        "EMP_NAME": "Swapna Devi",
+        "ESI_WAGES": 17454,
+        "ESI_EE": 131,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52437203617",
+        "EMP_NAME": "Ravi Sharma",
+        "ESI_WAGES": 17454,
+        "ESI_EE": 131,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52110204446",
+        "EMP_NAME": "Radha Murthy",
+        "ESI_WAGES": 20900,
+        "ESI_EE": 157,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52456929861",
+        "EMP_NAME": "Shanthi Goud",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52684992052",
+        "EMP_NAME": "Bhavani Prasad",
+        "ESI_WAGES": 20686,
+        "ESI_EE": 155,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52695461935",
+        "EMP_NAME": "Kiran Chary",
+        "ESI_WAGES": 17454,
+        "ESI_EE": 131,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52873626228",
+        "EMP_NAME": "Anitha Naidu",
+        "ESI_WAGES": 18076,
+        "ESI_EE": 136,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52418426922",
+        "EMP_NAME": "Mahesh Prasad",
+        "ESI_WAGES": 20686,
+        "ESI_EE": 155,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52597099595",
+        "EMP_NAME": "Rajesh Reddy",
+        "ESI_WAGES": 18076,
+        "ESI_EE": 136,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52879016325",
+        "EMP_NAME": "Venkatesh Prasad",
+        "ESI_WAGES": 18926,
+        "ESI_EE": 142,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52453926452",
+        "EMP_NAME": "Rajesh Goud",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52630570691",
+        "EMP_NAME": "Latha Reddy",
+        "ESI_WAGES": 18076,
+        "ESI_EE": 136,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52875278497",
+        "EMP_NAME": "Vijaya Prasad",
+        "ESI_WAGES": 19974,
+        "ESI_EE": 150,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52525958061",
+        "EMP_NAME": "Padma Naidu",
+        "ESI_WAGES": 18076,
+        "ESI_EE": 136,
+        "ATTENDANCE_DAYS": 29
+      },
+      {
+        "ESIC_IP_NO": "52734811621",
+        "EMP_NAME": "Vijaya Sharma",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52786971806",
+        "EMP_NAME": "Kavitha Chary",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52689594740",
+        "EMP_NAME": "Mahesh Naidu",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52491133417",
+        "EMP_NAME": "Suresh Chary",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52132891698",
+        "EMP_NAME": "Ganesh Yadav",
+        "ESI_WAGES": 18700,
+        "ESI_EE": 140,
+        "ATTENDANCE_DAYS": 30
+      },
+      {
+        "ESIC_IP_NO": "52643005789",
+        "EMP_NAME": "Mahesh Sharma",
+        "ESI_WAGES": 19974,
+        "ESI_EE": 150,
+        "ATTENDANCE_DAYS": 28
+      },
+      {
+        "ESIC_IP_NO": "52389802594",
+        "EMP_NAME": "Mahesh Devi",
+        "ESI_WAGES": 19974,
+        "ESI_EE": 150,
+        "ATTENDANCE_DAYS": 28
+      }
+    ],
+    "PAYMENT_REFS": [
+      {
+        "type": "ESI",
+        "trrn": "ESI20260400091823",
+        "amount": 24444,
+        "utr": "HDFCR52026051500377"
+      }
+    ],
+    "AUTHORISED_PERSON": {
+      "name": "Lakshmi Prasad Venkataraman",
+      "designation": "Director",
+      "pan": "AFZPV1183K"
+    }
+  },
+  "_provenance": [
+    {
+      "element": "ESIC_EMPLOYER_CODE",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_NAME",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "EST_ADDRESS",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    },
+    {
+      "element": "RETURN_PERIOD",
+      "status": "derived",
+      "atoms": 0,
+      "scope": null
+    },
+    {
+      "element": "HEADCOUNT_ESI_COVERED",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "ESI_WAGES",
+      "status": "derived",
+      "atoms": 32,
+      "scope": null
+    },
+    {
+      "element": "ESI_EE_CONTRIB",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "ESI_ER_CONTRIB",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "ESI_LINES",
+      "status": "derived",
+      "atoms": 180,
+      "scope": null
+    },
+    {
+      "element": "PAYMENT_REFS",
+      "status": "derived",
+      "atoms": 5,
+      "scope": [
+        "ESI"
+      ]
+    },
+    {
+      "element": "AUTHORISED_PERSON",
+      "status": "derived",
+      "atoms": 1,
+      "scope": null
+    }
+  ]
+}
