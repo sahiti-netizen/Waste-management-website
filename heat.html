@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heat Is Not Gender-Neutral — ManaChetta</title>
+  <meta
+    name="description"
+    content="How heatwaves hit women in India's informal economy — the waste pickers, vendors, home-based and sanitation workers who keep Indian cities running. Evidence, mechanisms and the policy gap."
+  />
+  <meta name="theme-color" content="#0f7b4a" />
+
+  <meta property="og:title" content="Heat Is Not Gender-Neutral" />
+  <meta
+    property="og:description"
+    content="Women are over 70% of India's informal waste sector and the most heat-exposed workers in the Indian city. India has no enforceable temperature at which any worker acquires a right to stop."
+  />
+  <meta property="og:type" content="article" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@600;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Page-specific typography for the long-form brief */
+    .prose { max-width: 76ch; }
+    .prose p { color: var(--ink-700); }
+    .prose h3 { margin: 2.2rem 0 .6rem; font-size: 1.25rem; }
+    .prose h4 { margin: 1.6rem 0 .4rem; font-size: 1.02rem; color: var(--ink-900); }
+    .prose ul { padding-left: 1.1rem; color: var(--ink-700); }
+    .prose li { margin: .35rem 0; }
+
+    .kicker-bar {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--green-50); color: var(--green-900);
+      border-radius: 999px; padding: .35rem .85rem;
+      font-size: .82rem; font-weight: 600; letter-spacing: .01em;
+    }
+
+    .stat-grid {
+      display: grid; gap: 1rem; margin: 1.75rem 0 0;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    }
+    .stat {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-md); padding: 1.1rem 1.15rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .stat b {
+      display: block; font-size: 1.85rem; line-height: 1.1;
+      color: var(--green-700); font-weight: 800; letter-spacing: -.02em;
+    }
+    .stat span { display: block; margin-top: .4rem; font-size: .88rem; color: var(--ink-500); }
+
+    .mech {
+      display: grid; gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 1.5rem;
+    }
+    .mech article {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-left: 4px solid var(--green-600);
+      border-radius: var(--radius-md); padding: 1.15rem 1.2rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .mech h4 { margin: 0 0 .45rem; font-size: 1rem; }
+    .mech p { margin: 0; font-size: .93rem; color: var(--ink-500); }
+    .mech .fix {
+      display: block; margin-top: .7rem; padding-top: .7rem;
+      border-top: 1px dashed var(--ink-100);
+      font-size: .85rem; color: var(--green-900); font-weight: 600;
+    }
+
+    .table-wrap { overflow-x: auto; margin: 1.4rem 0; }
+    table.data {
+      width: 100%; border-collapse: collapse; font-size: .92rem;
+      background: var(--paper); border-radius: var(--radius-md); overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    table.data th, table.data td {
+      text-align: left; padding: .7rem .85rem;
+      border-bottom: 1px solid var(--ink-100); vertical-align: top;
+    }
+    table.data th { background: var(--alt); font-weight: 700; color: var(--ink-900); }
+    table.data td:last-child { color: var(--ink-500); font-size: .86rem; }
+    table.data tr:last-child td { border-bottom: 0; }
+
+    blockquote.pull {
+      margin: 1.75rem 0; padding: 1.15rem 1.35rem;
+      background: var(--green-50); border-left: 4px solid var(--green-700);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 1.08rem; font-weight: 600; color: var(--green-900);
+    }
+
+    .asks { counter-reset: ask; list-style: none; padding: 0; margin: 1.4rem 0 0; }
+    .asks li {
+      position: relative; padding: .85rem 0 .85rem 3rem;
+      border-bottom: 1px solid var(--ink-100); color: var(--ink-700);
+    }
+    .asks li::before {
+      counter-increment: ask; content: counter(ask);
+      position: absolute; left: 0; top: .8rem;
+      width: 2rem; height: 2rem; border-radius: 50%;
+      background: var(--green-700); color: #fff;
+      display: grid; place-items: center; font-weight: 700; font-size: .85rem;
+    }
+    .asks strong { color: var(--ink-900); }
+
+    .src { font-size: .88rem; color: var(--ink-500); }
+    .src li { margin: .3rem 0; }
+    .caveat {
+      margin-top: 2rem; padding: 1.1rem 1.25rem;
+      border: 1px dashed var(--ink-300); border-radius: var(--radius-md);
+      font-size: .89rem; color: var(--ink-500); background: var(--paper);
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== NAV ========== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html#home" class="brand" aria-label="ManaChetta home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 22C5 12 13 5 27 5c0 14-7 22-17 22-3 0-5-1-5-5z" />
+            <path d="M5 27C9 22 13 19 19 16" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          Mana<span class="brand-accent">Chetta</span>
+          <em class="brand-sub">మన చెత్త</em>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#map">Map</a>
+        <a href="index.html#leaderboard">Leaderboard</a>
+        <a href="heat.html">Heat &amp; workers</a>
+        <a href="index.html#report" class="btn btn-primary btn-sm">Report now</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HEADER ========== -->
+  <section class="section" style="padding-top:3.5rem">
+    <div class="container">
+      <span class="kicker-bar">Research brief · Updated August 2026</span>
+      <h1 style="margin:1rem 0 .6rem; font-size:clamp(2rem,5vw,3.1rem); letter-spacing:-.03em; line-height:1.08; max-width:20ch">
+        Heat is <span class="u">not</span> gender-neutral.
+      </h1>
+      <p class="lede" style="max-width:70ch">
+        The people who clear India's waste, sell on its footpaths and stitch in its
+        one-room homes are overwhelmingly women — and they work in the hottest,
+        least protected conditions in the country. India currently has
+        <strong>no enforceable temperature at which any worker acquires a right to stop.</strong>
+      </p>
+
+      <div class="stat-grid">
+        <div class="stat">
+          <b>&gt;70%</b>
+          <span>of India's informal waste sector workers are women — about 90% of street-level recyclers in Pune</span>
+        </div>
+        <div class="stat">
+          <b>~80%</b>
+          <span>of surveyed SEWA members reported heat-related income loss (up to 50%), health harm, or both</span>
+        </div>
+        <div class="stat">
+          <b>89%</b>
+          <span>of 519 Delhi street vendors had no access to free, clean water at work; over 70% had no toilet</span>
+        </div>
+        <div class="stat">
+          <b>247bn</b>
+          <span>potential labour-hours India lost to heat in 2024 — up 124% on the 1990s (Lancet Countdown)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY GENDERED ========== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The mechanisms</span>
+        <h2>Four separate channels, four different fixes.</h2>
+        <p>
+          "Women are more vulnerable to heat" is true and analytically useless.
+          The exposure arrives through four independent routes — and each one needs
+          a different intervention.
+        </p>
+      </div>
+
+      <div class="mech">
+        <article>
+          <h4>1 · Physiology</h4>
+          <p>
+            Women sweat roughly 15% less than men under identical conditions,
+            retaining more heat for the same exposure. Heat stress also disrupts
+            menstrual cycles and intensifies menopausal symptoms — and high
+            anaemia prevalence cuts oxygen delivery exactly when thermal load
+            raises cardiovascular demand.
+          </p>
+          <span class="fix">→ Exposure limits can't be set from male-referenced thresholds.</span>
+        </article>
+
+        <article>
+          <h4>2 · Paid by output, not by hour</h4>
+          <p>
+            Most of this work pays per kilo, per brick, per plate sold. Resting in
+            the heat isn't a safety adjustment — it's a pay cut. A MGNREGS worker
+            whose site crosses 38°C by 10am is docked if she misses her earthwork
+            target and unpaid if she leaves. The advisory and the wage rule
+            contradict each other; the wage rule wins.
+          </p>
+          <span class="fix">→ Protection has to attach to income, not just behaviour.</span>
+        </article>
+
+        <article>
+          <h4>3 · The sanitation–hydration trap</h4>
+          <p>
+            Rehydrating means urinating; urinating means a toilet; there is no
+            toilet. So women drink less. Among 200 women with inadequate workplace
+            toilets, 87% reported recurring genitourinary problems; those without
+            toilet access carried six times the infection risk, and those drinking
+            too little four times.
+          </p>
+          <span class="fix">→ Free water and safe women's toilets are heat infrastructure.</span>
+        </article>
+
+        <article>
+          <h4>4 · The second shift</h4>
+          <p>
+            Indian women spend 46% of waking hours on unpaid care — eight times
+            men. Heatwaves add about 90 minutes a day to it. For home-based
+            workers the house is the worksite, so exposure never ends: indoor
+            productivity falls ~2% per °C above 25°C, and slum settlements can run
+            6°C hotter than the neighbourhoods around them.
+          </p>
+          <span class="fix">→ The dwelling and the night are workplace exposure.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EVIDENCE ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The evidence</span>
+        <h2>What heat does to income, bodies and pregnancies.</h2>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data">
+          <caption class="src" style="text-align:left; padding:.5rem 0 .8rem">
+            Field findings on women workers and heat, India
+          </caption>
+          <thead>
+            <tr><th scope="col">Finding</th><th scope="col">Population</th><th scope="col">Source</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>~80% reported heat-related income loss (up to 50%), health impacts, or both; ~40% reported worsened mental health</td>
+              <td>~600 SEWA members — farmers, salt-pan workers, vendors, waste recyclers, head-loaders, construction workers</td>
+              <td>SEWA / Arsht-Rock</td>
+            </tr>
+            <tr>
+              <td>96% reported a collapse in customer footfall; 90% cut working hours; over 70% lost stock</td>
+              <td>Street vendors, Delhi-NCR</td>
+              <td>WIEGO</td>
+            </tr>
+            <tr>
+              <td>70% reported heat-related physical symptoms; 97% reported no institutional support of any kind</td>
+              <td>3,300+ women across 15 districts in 7 states</td>
+              <td>MSSRF, 2025</td>
+            </tr>
+            <tr>
+              <td>Occupational heat exposure associated with elevated miscarriage and stillbirth risk, against thresholds of 27.5°C WBGT (heavy work) / 28.0°C (moderate)</td>
+              <td>Prospective cohort of 800 pregnant women, Chennai</td>
+              <td>BJOG, 2024</td>
+            </tr>
+            <tr>
+              <td>Productivity loss of 5.55–6.48% per 1°C of WBGT; linear decline above 34.9°C</td>
+              <td>Female brick moulders, West Bengal</td>
+              <td>Global Health Action</td>
+            </tr>
+            <tr>
+              <td>Each 1°C of annual warming associated with +4.5% intimate partner violence; India highest at +8% physical, +7.3% sexual</td>
+              <td>~195,000 ever-partnered women, India / Nepal / Pakistan</td>
+              <td>Scoping review &amp; regional analysis</td>
+            </tr>
+            <tr>
+              <td>Musculoskeletal morbidity 76.6%; injuries reported by 39.7% of the Hyderabad sample — before heat is added</td>
+              <td>394 municipal solid waste workers, Telangana</td>
+              <td>Cross-sectional study</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <blockquote class="pull">
+        Heat cuts informal women's income from four directions at once — fewer
+        working hours, fewer customers, spoiled stock, and new costs for water,
+        ice and medicine. A salaried worker in an air-conditioned office loses
+        none of the four.
+      </blockquote>
+
+      <div class="prose">
+        <h3>And nobody is counting properly</h3>
+        <p>
+          For 2024, the health ministry recorded 360 heatstroke deaths; a
+          media-verified count across 17 states found 733 deaths and over 40,000
+          heatstroke cases. For 2025, the NCDC logged 7,192 suspected heatstroke
+          cases and <strong>14 confirmed deaths</strong>.
+        </p>
+        <p>
+          India's heat deaths are disaggregated neither by sex nor by occupation.
+          A European estimate for summer 2022 found roughly 56% more heat deaths
+          in women than men, and a 30-year analysis of Indian mortality data finds
+          women's heat deaths rising since 2005 while men's fell — but sex-specific
+          attributable mortality for India remains genuinely unresolved. That
+          absence is itself the finding: <em>you cannot target what you do not count.</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WASTE PICKERS ========== -->
+  <section class="section section-alt">
+    <div class="container grid-2">
+      <div class="prose">
+        <span class="eyebrow">The sharpest case</span>
+        <h2 style="margin-top:.4rem">Waste pickers work the hottest surface in the city.</h2>
+        <p>
+          Between 1.5 and 4 million people work India's informal waste sector.
+          Over 70% are women. Together they handle 60–70% of urban recyclable
+          waste and underpin roughly 70% of the country's plastic recycling — an
+          unpaid climate mitigation subsidy from the poorest women in the city to
+          everyone else in it.
+        </p>
+        <p>
+          Landfill surfaces reach up to 70°C. Delhi's ambient peaks hit 49°C.
+          Every summer Ghazipur, Bhalswa and Okhla catch fire as decomposing waste
+          generates methane that ignites in the heat — satellites have picked up
+          124 significant methane leaks over Delhi since 2020, including a Ghazipur
+          plume venting 156 tonnes an hour. Women work through the smoke, because
+          the scrap price doesn't fall when the temperature rises.
+        </p>
+        <p>
+          These women are simultaneously the most heat-exposed workers in the
+          city, essential municipal infrastructure operating without a contract,
+          and net contributors to climate mitigation. <strong>If a heat regime
+          can't reach them, it isn't a heat regime.</strong>
+        </p>
+      </div>
+
+      <aside class="about-cards">
+        <div class="mini-card">
+          <h4>What already works</h4>
+          <p>
+            SEWA's parametric heat insurance pays out automatically when
+            temperature crosses a threshold — no claim, no assessor. It scaled
+            from 21,000 women in 2023 to about 250,000 across 34 districts in 2025.
+          </p>
+        </div>
+        <div class="mini-card">
+          <h4>…and its honest limit</h4>
+          <p>
+            The 2024 season paid ₹2.92 crore to 46,242 women — an average near
+            US$7 each. That's ORS and medicine, not income replacement. What it
+            proves is the <em>rail</em>: objective trigger, zero claims friction,
+            money to women, at scale.
+          </p>
+        </div>
+        <div class="mini-card">
+          <h4>Cool roofs</h4>
+          <p>
+            Mahila Housing Trust's reflective paint and insulated roofing cut
+            indoor temperatures 4–7°C in Ahmedabad slum homes. One Bhopal tailor's
+            daily income went from ₹150 to ₹450 once she could work through the
+            afternoon.
+          </p>
+        </div>
+        <div class="mini-card">
+          <h4>Cooperatives</h4>
+          <p>
+            SWaCH Pune — 3,500+ member-owners, mostly women and Dalits — serves
+            600,000 homes and recycles 50,000+ tonnes a year. Hasiru Dala has
+            organised 9,500 waste pickers and won occupational ID cards, the
+            precondition for every other entitlement.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========== POLICY GAP ========== -->
+  <section class="section">
+    <div class="container prose">
+      <span class="eyebrow">The gap</span>
+      <h2 style="margin-top:.4rem">Policy sees "heat". Policy sees "women". It almost never sees both.</h2>
+
+      <h4>No heat standard in labour law</h4>
+      <p>
+        The 2020 consolidation into four labour codes produced no temperature or
+        ventilation thresholds, even for factories. The OSH Code mentions
+        temperature only for dock workers, doesn't recognise heat as an
+        occupational hazard, and excludes gig workers outright.
+      </p>
+
+      <h4>Heat Action Plans treat women as one undifferentiated group</h4>
+      <p>
+        A Centre for Policy Research assessment of 37 plans across 18 states found
+        gender handled as a homogeneous category rather than intersecting with
+        income, caste and livelihood. Vulnerable-occupation lists name vendors,
+        mechanics and construction workers — and omit domestic, home-based and gig
+        work, which is where women concentrate. Not one plan that addressed
+        occupation also acknowledged caste, despite waste picking and salt-pan work
+        being caste-assigned occupations.
+      </p>
+
+      <h4>Heat is still not a national disaster</h4>
+      <p>
+        At least ten states have notified heatwaves as state-specific disasters.
+        Heatwave remains outside the Disaster Management Act, 2005 — which keeps
+        the national relief pool closed and leaves interstate migrant workers, who
+        fall between state schemes, with no route at all.
+      </p>
+
+      <h4>Registration is not protection</h4>
+      <p>
+        e-Shram holds 31.89 crore unorganised workers, 54% of them women. There is
+        no heat trigger attached to any of it.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== AGENDA ========== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What to do</span>
+        <h2>Four things that need no new law. Then the law.</h2>
+      </div>
+
+      <ol class="asks" style="max-width:80ch">
+        <li><strong>Free water and safe toilets at work, mandated and audited.</strong> 100% coverage of free drinking water and shaded rest points within 200m of every registered vending zone, market, transfer station and dumpsite — with free, women-designated, lockable toilets and quarterly public reporting. Highest-return item on this list.</li>
+        <li><strong>Heat-adjust public employment.</strong> Relax MGNREGS output targets without docking wages during declared heat alerts; shift permissible hours earlier; protect ASHA and Anganwadi incentive payments when field visits are unsafe.</li>
+        <li><strong>Count properly.</strong> Sex- and occupation-disaggregated recording of heat morbidity and mortality, with one case definition shared across NCDC, NCRB and state health departments.</li>
+        <li><strong>Fund cool roofs for home-based workers.</strong> A home-based worker's roof is workplace infrastructure. Subsidise it as such.</li>
+        <li><strong>Legislate a binding occupational heat standard.</strong> Enforceable WBGT thresholds with work–rest ratios, shade and water — covering gig, platform, home-based and self-employed workers, with limits that account for pregnancy and for women's thermoregulatory baseline.</li>
+        <li><strong>Notify heatwave as a national disaster</strong> under the Disaster Management Act, 2005, so relief reaches interstate migrants too.</li>
+        <li><strong>Build state wage compensation on the parametric rail.</strong> The trigger-and-transfer plumbing is proven at 250,000 women. Put a state-sized transfer through it.</li>
+        <li><strong>Rewrite Heat Action Plans with occupation × gender × caste as the unit of vulnerability,</strong> co-designed with worker organisations rather than consulted after drafting — and add heat audits of informal workplaces employing women.</li>
+        <li><strong>Treat night heat and indoor heat as policy objects:</strong> overnight cooling centres, retrofit subsidies, and actual measurement of indoor temperature where home-based work happens.</li>
+        <li><strong>Formalise waste work.</strong> Occupational ID cards, cooperative contracts with urban local bodies, payment for the recycling and avoided emissions already being delivered — with heat provisions written into the contract.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== HYDERABAD ========== -->
+  <section class="section">
+    <div class="container prose">
+      <span class="eyebrow">Hyderabad</span>
+      <h2 style="margin-top:.4rem">Telangana is ahead on paper. The gap is verification.</h2>
+      <p>
+        Telangana has notified heatwave as a state-specific disaster, published a
+        2025 Heatwave Action Plan, raised heat-death ex gratia from ₹50,000 to
+        ₹4 lakh, and directed its labour welfare department to provide rest,
+        drinking water, ORS and shaded rest areas specifically to sanitation and
+        solid waste management workers. That is better than most Indian cities have.
+      </p>
+      <p>
+        GHMC's waste system runs on roughly 22,000 staff and about 2,000 Swachh
+        Autos, alongside informal pickers at transfer stations and the dumpsite,
+        with self-help-group structures that make the collection end heavily
+        female. The Telangana study of 394 municipal solid waste workers found
+        musculoskeletal morbidity in 76.6% and injuries in 39.7% of the Hyderabad
+        sample — before heat enters the picture.
+      </p>
+      <blockquote class="pull">
+        Where are the shaded rest points, water points and functioning women's
+        toilets on the collection routes, at the transfer stations and at the
+        dumpsite — and how many of them are actually open during a heat alert?
+      </blockquote>
+      <p>
+        That is a mappable, auditable, ward-level dataset. A platform that already
+        maps garbage by ward is the natural instrument for mapping the amenities
+        the people who clear that garbage are legally owed.
+      </p>
+
+      <div class="cta-row" style="margin-top:1.5rem">
+        <a class="btn btn-primary" href="index.html#report">Report a spot</a>
+        <a class="btn btn-ghost" href="https://github.com/sahiti-netizen/waste-management-website/blob/main/docs/heat-and-women-in-indias-informal-economy.md" target="_blank" rel="noopener">Read the full brief with sources →</a>
+      </div>
+
+      <div class="caveat">
+        <strong>On evidence quality.</strong> Figures here come from three tiers:
+        peer-reviewed studies (strongest, but small and geographically specific);
+        institutional datasets (ILO, Lancet Countdown, PLFS, e-Shram, CPR);
+        and organisational surveys reported through media (SEWA, WIEGO, MSSRF),
+        which are directionally consistent across independent sources but whose
+        exact coefficients should be quoted with attribution rather than as
+        settled fact. Where two summaries of one study disagreed, the more
+        conservative reading is used. Anything load-bearing for publication should
+        be checked against the linked primary document in the full brief.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 22C5 12 13 5 27 5c0 14-7 22-17 22-3 0-5-1-5-5z" />
+              <path d="M5 27C9 22 13 19 19 16" />
+            </svg>
+          </span>
+          <span class="brand-text">Mana<span class="brand-accent">Chetta</span></span>
+        </div>
+        <p>Hyderabad's citizen garbage map.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Product</h5>
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#report">Report</a>
+        <a href="index.html#map">Public map</a>
+        <a href="index.html#leaderboard">Leaderboard</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Research</h5>
+        <a href="heat.html">Heat &amp; women workers</a>
+        <a href="https://github.com/sahiti-netizen/waste-management-website/blob/main/docs/heat-and-women-in-indias-informal-economy.md" target="_blank" rel="noopener">Full brief &amp; sources</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:hello@manachetta.in">hello@manachetta.in</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> ManaChetta · A volunteer project</span>
+      <span>Made with ♥ in Hyderabad</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -45,12 +45,14 @@ helpline on WhatsApp.
 ```
 .
 ├── index.html              Landing page (all sections)
+├── heat.html               Research page: heat & women informal workers
 ├── css/styles.css          All styling
 ├── js/app.js               Nav, form, geolocation, WhatsApp hand-off
 ├── js/map.js               Leaflet map + pins
 ├── js/leaderboard.js       Ranked ward / MLA / MP leaderboard
 ├── data/wards.js           Sample GHMC ward → MLA / MP dataset
-└── data/reports.js         Sample reports seeding the map + leaderboard
+├── data/reports.js         Sample reports seeding the map + leaderboard
+└── docs/                   Long-form research briefs (Markdown, cited)
 ```
 
 ## Running locally
@@ -78,6 +80,36 @@ Because the site is fully static, you can drop the folder onto any host:
 - **GitHub Pages** — push to `main` and enable Pages (root directory).
 - **Netlify / Vercel / Cloudflare Pages** — connect the repo, no build
   command, publish directory is the repo root.
+
+---
+
+## Research
+
+### Heat Is Not Gender-Neutral
+
+[`docs/heat-and-women-in-indias-informal-economy.md`](docs/heat-and-women-in-indias-informal-economy.md)
+— a cited brief on how heatwaves hit women in India's informal economy: the
+waste pickers, street vendors, home-based and sanitation workers who keep Indian
+cities running.
+
+Why it lives in this repo: over **70% of India's informal waste sector workers
+are women**, they handle **60–70% of urban recyclable waste**, and they work the
+hottest surface in the city — landfill surfaces reach **70°C**. A platform that
+maps garbage by ward is the natural instrument for also mapping the shade, water
+and toilets the people who clear that garbage are legally owed.
+
+The brief covers the four mechanisms by which heat reaches these women
+(physiology, piece-rate pay, the sanitation–hydration trap, the unpaid second
+shift), the evidence on income / health / pregnancy / violence / mortality,
+sector profiles, the policy gap (no enforceable heat standard exists in Indian
+labour law), what already works at small scale, and a ten-point agenda.
+
+A web version is at [`heat.html`](heat.html).
+
+> Sources are linked inline and graded by tier at the end of the brief. Several
+> primary sources could not be fetched in full from the authoring environment, so
+> figures were triangulated across independent secondary reports — check anything
+> load-bearing against the linked primary document.
 
 ---
 
